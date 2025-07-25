@@ -59,7 +59,7 @@ export default function AskDoctorPage() {
                 </div>
                 <div>
                   <h2>Important Questions Every Patient Should Ask</h2>
-                  <p>Being informed is your right. Whether you're going for a check-up, surgery, or a hospital stay, here are key questions to ask your doctor:</p>
+                  <p>Being informed is your right. Whether you are going for a check-up, surgery, or a hospital stay, here are key questions to ask your doctor:</p>
                 </div>
               </div>
 
