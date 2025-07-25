@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, use } from "react"
 import Link from "next/link"
 import { Calendar, Users, ArrowLeft, Download, ExternalLink, Quote } from "lucide-react"
 import styles from "./page.module.css"
@@ -159,10 +159,14 @@ const journalArticles = [
   },
 ]
 
-export default function JournalArticlePage({ params }: { params: { id: string } }) {
-  const [activeSection, setActiveSection] = useState("abstract")
+interface PageProps {
+  params: Promise<{ id: string }>
+}
 
-  const article = journalArticles.find((a) => a.id === Number.parseInt(params.id))
+export default function JournalArticlePage({ params }: PageProps) {
+  const [activeSection, setActiveSection] = useState("abstract")
+  const { id } = use(params) // Use React's 'use' hook to unwrap the Promise
+  const article = journalArticles.find((a) => a.id === Number.parseInt(id))
 
   if (!article) {
     return (
@@ -265,7 +269,6 @@ export default function JournalArticlePage({ params }: { params: { id: string } 
                     </div>
                   </div>
                 </div>
-
                 <h1 className={styles.articleTitle}>{article.title}</h1>
               </header>
 
