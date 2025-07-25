@@ -26,7 +26,7 @@ export default function PreventiveCarePage() {
     },
     {
       title: "Women's Health",
-      description: "Comprehensive women's health screening including mammography and pap smear",
+      description: "Comprehensive womens health screening including mammography and pap smear",
       icon: <Users size={32} />,
       ageGroup: "21+ years",
       frequency: "Annual",
