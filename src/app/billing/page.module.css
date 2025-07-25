@@ -1,0 +1,310 @@
+.billingPage {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageHeader h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  color: var(--primary-blue);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.paymentGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.paymentCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.paymentCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.paymentIcon {
+  color: var(--primary-green);
+  margin-bottom: 1rem;
+}
+
+.paymentCard h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.paymentCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.insuranceSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.insuranceInfo {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.insuranceInfo h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.insuranceInfo p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.insuranceProcess h4 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.insuranceProcess ol {
+  color: var(--text-dark);
+  padding-left: 1.5rem;
+}
+
+.insuranceProcess li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.providersList {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.providersList h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.providersList ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.providersList li {
+  padding: 0.75rem 0;
+  color: var(--text-dark);
+  position: relative;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.providersList li:last-child {
+  border-bottom: none;
+}
+
+.providersList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+.billingInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.infoCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.infoCard svg {
+  color: var(--accent-orange);
+  margin-bottom: 1rem;
+}
+
+.infoCard h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.infoCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.estimateCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.estimateCard h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.estimateCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.estimateContact {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contactMethod {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.assistanceCard {
+  background: linear-gradient(135deg, #e0f2fe, #b3e5fc);
+  border-radius: 16px;
+  padding: 2.5rem;
+}
+
+.assistanceCard h3 {
+  color: #0277bd;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.assistanceCard p {
+  color: #01579b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.assistanceList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.assistanceList li {
+  padding: 0.5rem 0;
+  color: #01579b;
+  position: relative;
+  padding-left: 1.5rem;
+  font-weight: 500;
+}
+
+.assistanceList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0288d1;
+  font-weight: bold;
+}
+
+.assistanceContact {
+  color: #01579b !important;
+  font-weight: 600 !important;
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .billingPage {
+    padding: 1rem 0;
+  }
+
+  .pageHeader h1 {
+    font-size: 2.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .paymentGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .insuranceSection {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .billingInfoGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .estimateContact {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
