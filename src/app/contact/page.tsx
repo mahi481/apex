@@ -61,7 +61,7 @@ export default function ContactPage() {
             <div className={styles.infoCard}>
               <h2>Get in Touch</h2>
               <p>
-                We're here to help you with all your healthcare needs. Reach out to us through any of the following
+                We are here to help you with all your healthcare needs. Reach out to us through any of the following
                 ways:
               </p>
 
