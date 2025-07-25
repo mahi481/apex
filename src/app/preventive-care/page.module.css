@@ -1,0 +1,236 @@
+.preventivePage {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageHeader h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  color: var(--primary-blue);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.importanceCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.importanceCard p {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+}
+
+.benefit svg {
+  color: var(--primary-green);
+  flex-shrink: 0;
+}
+
+.benefit span {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.programCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.programCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.programIcon {
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.programCard h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.programCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.programDetails {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 1rem;
+  text-align: left;
+}
+
+.detail {
+  margin-bottom: 0.5rem;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.detail strong {
+  color: var(--primary-blue);
+}
+
+.tipsCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+}
+
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.tipItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+}
+
+.tipItem svg {
+  color: var(--primary-green);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.tipItem span {
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.scheduleCard {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border-radius: 16px;
+  padding: 2.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.scheduleCard svg {
+  color: #15803d;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.scheduleCard h3 {
+  color: #15803d;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.scheduleCard p {
+  color: #166534;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.contactInfo p {
+  color: #15803d !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .preventivePage {
+    padding: 1rem 0;
+  }
+
+  .pageHeader h1 {
+    font-size: 2.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .programsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .tipsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .scheduleCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}

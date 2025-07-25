@@ -1,0 +1,415 @@
+.specialityPage {
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+}
+
+.heroContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.breadcrumb {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.breadcrumb a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.heroText h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.heroStats {
+  display: flex;
+  gap: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-blue);
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.heroImage {
+  position: relative;
+}
+
+.departmentImage {
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  height: auto;
+}
+
+.tabsContainer {
+  margin-bottom: 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: white;
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tab {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  color: var(--primary-blue);
+  background: var(--bg-light);
+}
+
+.section {
+  margin-bottom: 4rem;
+  scroll-margin-top: 100px;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+}
+
+.overviewContent {
+  background: white;
+  border-radius: 16px;
+  padding: 3rem;
+  box-shadow: var(--shadow);
+}
+
+.overviewText h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem 0;
+  font-weight: 600;
+}
+
+.overviewText h3:first-child {
+  margin-top: 0;
+}
+
+.overviewText p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.servicesList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.servicesList li {
+  padding: 0.75rem 0;
+  color: var(--text-dark);
+  position: relative;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.servicesList li:last-child {
+  border-bottom: none;
+}
+
+.servicesList li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+.facilitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.facilityCard {
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.facilityCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.facilityCard svg {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+}
+
+.facilityCard h4 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.facilityCard p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.doctorsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.doctorCard {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.doctorCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.doctorImage {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.doctorImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctorInfo {
+  padding: 2rem;
+  text-align: center;
+}
+
+.doctorInfo h3 {
+  color: var(--primary-blue);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.designation {
+  color: var(--accent-orange);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.specialization {
+  color: var(--text-dark);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.qualifications {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.scheduleTable {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.scheduleHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  color: white;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+.scheduleRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+}
+
+.scheduleRow:last-child {
+  border-bottom: none;
+}
+
+.day {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-light);
+}
+
+.doctor {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.appointmentSection {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  color: white;
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.appointmentContent h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.appointmentContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.appointmentFeatures {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .specialityPage {
+    padding: 1rem 0;
+  }
+
+  .heroContent {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+  }
+
+  .heroStats {
+    justify-content: center;
+  }
+
+  .tabs {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .overviewContent {
+    padding: 2rem;
+  }
+
+  .facilitiesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .doctorsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .scheduleHeader,
+  .scheduleRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .appointmentFeatures {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

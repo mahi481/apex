@@ -1,0 +1,93 @@
+.prayerPage {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.headerText h1 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  color: #2c3e50;
+}
+
+.headerText p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.infoSection,
+.facilitiesSection,
+.guidelinesSection {
+  margin-bottom: 2rem;
+}
+
+.infoSection h2,
+.facilitiesSection h2,
+.guidelinesSection h2 {
+  font-size: 1.5rem;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+}
+
+.infoSection p,
+.facilitiesSection ul,
+.guidelinesSection ul {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.facilitiesSection ul,
+.guidelinesSection ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.footerNote {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .headerText h1 {
+    font-size: 1.6rem;
+  }
+
+  .headerText p {
+    font-size: 1rem;
+  }
+
+  .infoSection h2,
+  .facilitiesSection h2,
+  .guidelinesSection h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,25 @@
+.homePage {
+  min-height: 100vh;
+}
+
+.homePage section {
+  position: relative;
+  overflow: hidden;
+}
+
+.homePage section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 102, 204, 0.02), rgba(0, 166, 81, 0.02));
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .homePage {
+    padding-top: 0;
+  }
+}
