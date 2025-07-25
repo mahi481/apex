@@ -62,7 +62,7 @@ export default function PreventiveCarePage() {
               <p>
                 Preventive healthcare focuses on preventing diseases before they occur, rather than treating them after
                 they develop. Regular health screenings and lifestyle modifications can help detect health issues early
-                when they're most treatable, ultimately saving lives and reducing healthcare costs.
+                when they are most treatable, ultimately saving lives and reducing healthcare costs.
               </p>
               <div className={styles.benefits}>
                 <div className={styles.benefit}>
