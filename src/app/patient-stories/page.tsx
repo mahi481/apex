@@ -10,7 +10,7 @@ export default function PatientStoriesPage() {
       age: 45,
       condition: "Cardiac Surgery",
       story:
-        "After my heart attack, I was terrified. But the cardiac team at Apex Hospital gave me hope and a new lease on life. The surgery was successful, and the post-operative care was exceptional. Today, I'm back to my normal activities and feeling stronger than ever.",
+        "After my heart attack, I was terrified. But the cardiac team at Apex Hospital gave me hope and a new lease on life. The surgery was successful, and the post-operative care was exceptional. Today, I am back to my normal activities and feeling stronger than ever.",
       image: "/placeholder.svg?height=300&width=300",
       date: "2024-01-10",
       rating: 5,
@@ -21,7 +21,7 @@ export default function PatientStoriesPage() {
       age: 38,
       condition: "Maternity Care",
       story:
-        "The maternity ward at Apex Hospital made my delivery experience wonderful. The doctors and nurses were so caring and supportive. They made sure both my baby and I were comfortable throughout. I couldn't have asked for better care during such an important time.",
+        "The maternity ward at Apex Hospital made my delivery experience wonderful. The doctors and nurses were so caring and supportive. They made sure both my baby and I were comfortable throughout. I could not have asked for better care during such an important time.",
       image: "/placeholder.svg?height=300&width=300",
       date: "2024-01-05",
       rating: 5,
@@ -43,7 +43,7 @@ export default function PatientStoriesPage() {
       age: 29,
       condition: "Cancer Treatment",
       story:
-        "Being diagnosed with cancer was devastating, but the oncology team at Apex Hospital stood by me throughout my treatment journey. Their expertise, compassion, and constant support helped me fight and win against cancer. I'm now cancer-free and grateful for their care.",
+        "Being diagnosed with cancer was devastating, but the oncology team at Apex Hospital stood by me throughout my treatment journey. Their expertise, compassion, and constant support helped me fight and win against cancer. I am now cancer-free and grateful for their care.",
       image: "/placeholder.svg?height=300&width=300",
       date: "2023-12-20",
       rating: 5,
@@ -69,7 +69,7 @@ export default function PatientStoriesPage() {
                 Every patient who walks through our doors has a unique story. Here are some inspiring journeys of
                 recovery, hope, and the exceptional care our patients have received at Apex Hospital. These stories
                 reflect our commitment to providing compassionate, quality healthcare that makes a real difference in
-                people's lives.
+                people lives.
               </p>
             </div>
           </section>
@@ -111,7 +111,7 @@ export default function PatientStoriesPage() {
             <div className={styles.shareStoryCard}>
               <h2>Share Your Story</h2>
               <p>
-                Have you had a positive experience at Apex Hospital? We'd love to hear your story and share it with
+                Have you had a positive experience at Apex Hospital? We did love to hear your story and share it with
                 others who might benefit from your experience.
               </p>
               <div className={styles.shareContact}>
