@@ -115,7 +115,7 @@ export default function NeurologyPage() {
               <ul className={styles.servicesList}>
                 <li>Stroke Care & Prevention</li>
                 <li>Epilepsy Management</li>
-                <li>Movement Disorders (Parkinson's, etc.)</li>
+                <li>Movement Disorders (Parkinsons, etc.)</li>
                 <li>Headache & Migraine Treatment</li>
                 <li>Memory Disorders & Dementia Care</li>
                 <li>Neuromuscular Disorders</li>
