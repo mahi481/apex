@@ -654,7 +654,7 @@ export default function StudentAdmission() {
             <div className={styles.grid}>
               <div className={styles.formGroup}>
                 <label htmlFor="guardianName" className={styles.label}>
-                  Father's/Mother's/Guardian's Name *
+                  Father/Mother/Guardians Name *
                 </label>
                 <input
                   type="text"
