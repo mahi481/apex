@@ -1,0 +1,96 @@
+.cafeteriaSection {
+  background: linear-gradient(to right, #fdfdfd, #f0f8ff);
+  padding: 2rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.cafeteriaImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+.info {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.features ul {
+  padding-left: 1.2rem;
+  list-style-type: disc;
+  color: #444;
+  line-height: 1.7;
+}
+
+.contactNote {
+  margin-top: 2rem;
+  font-size: 1rem;
+  background-color: #e6f2ff;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #1d3557;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.6rem;
+    flex-direction: column;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .cafeteriaImage {
+    height: auto;
+  }
+
+  .contactNote {
+    font-size: 0.95rem;
+  }
+}
