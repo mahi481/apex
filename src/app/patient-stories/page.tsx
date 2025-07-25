@@ -94,7 +94,8 @@ export default function PatientStoriesPage() {
                     </div>
                   </div>
                   <div className={styles.storyContent}>
-                    <p>"{story.story}"</p>
+                   <p>{story.story}</p>
+
                   </div>
                   <div className={styles.storyMeta}>
                     <div className={styles.date}>
