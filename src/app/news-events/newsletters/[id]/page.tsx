@@ -168,7 +168,7 @@ export default async function NewsletterDetail({ params }: { params: Promise<{ i
                 <h2>Newsletter Overview</h2>
                 <p className={styles.overview}>{newsletter.content}</p>
 
-                <h3 className={styles.sectionsTitle}>What's Inside</h3>
+                <h3 className={styles.sectionsTitle}>What Inside</h3>
                 <div className={styles.sections}>
                   {newsletter.sections.map((section, index) => (
                     <div key={index} className={styles.section}>
