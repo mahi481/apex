@@ -62,7 +62,7 @@ const newsletters = [
       {
         title: "2023 Year in Review",
         description:
-          "Comprehensive overview of our hospital's achievements, milestones, and improvements throughout 2023.",
+          "Comprehensive overview of our hospitals achievements, milestones, and improvements throughout 2023.",
       },
       {
         title: "Healthy New Year Resolutions",
