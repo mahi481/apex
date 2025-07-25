@@ -1,9 +1,8 @@
-"use client"
-import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Calendar, Clock, ArrowLeft, Share2, Bookmark, Heart } from "lucide-react"
+import { Calendar, Clock, ArrowLeft } from "lucide-react"
 import styles from "./page.module.css"
+import { BlogPostActions } from "./blog-post-actions"
 
 const blogPosts = [
   {
@@ -150,147 +149,150 @@ const blogPosts = [
     authorImage: "/placeholder.svg?height=100&width=100",
   },
   {
-  id: 3,
-  title: "Diabetes Management: A Comprehensive Guide",
-  content: `
-    <h2>Introduction to Diabetes</h2>
-    <p>Diabetes is a chronic condition that affects how your body turns food into energy. With proper management, individuals with diabetes can lead healthy and active lives. This guide provides a thorough overview of managing diabetes effectively.</p>
-    
-    <h2>Types of Diabetes</h2>
-    <p>There are several types of diabetes, each with distinct characteristics:</p>
-    <ul>
-      <li><strong>Type 1 Diabetes:</strong> An autoimmune condition where the body attacks insulin-producing cells</li>
-      <li><strong>Type 2 Diabetes:</strong> The most common form, often linked to lifestyle and insulin resistance</li>
-      <li><strong>Gestational Diabetes:</strong> Diabetes that develops during pregnancy</li>
-      <li><strong>Prediabetes:</strong> Higher-than-normal blood sugar levels, not yet in the diabetes range</li>
-    </ul>
-    
-    <h2>Prevention and Lifestyle Management</h2>
-    <p>Managing diabetes involves a combination of healthy habits and medical care:</p>
-    
-    <h3>1. Follow a Balanced Diet</h3>
-    <p>Good nutrition is key to blood sugar control:</p>
-    <ul>
-      <li>Focus on high-fiber foods like vegetables, legumes, and whole grains</li>
-      <li>Limit refined carbs and sugary foods</li>
-      <li>Choose lean proteins and healthy fats</li>
-      <li>Monitor carbohydrate intake and portion sizes</li>
-    </ul>
-    
-    <h3>2. Engage in Regular Exercise</h3>
-    <p>Physical activity improves insulin sensitivity and helps manage weight. Aim for at least 150 minutes of moderate exercise each week, such as walking, cycling, or swimming.</p>
-    
-    <h3>3. Monitor Blood Sugar Levels</h3>
-    <p>Regular monitoring helps you stay within target ranges and make informed decisions about food, activity, and medications.</p>
-    
-    <h2>Treatment Options</h2>
-    <p>Diabetes treatment depends on the type and severity:</p>
-    
-    <h3>Medications</h3>
-    <ul>
-      <li>Insulin therapy (for Type 1 and some Type 2 patients)</li>
-      <li>Oral medications to improve insulin sensitivity or reduce sugar absorption</li>
-      <li>GLP-1 receptor agonists and SGLT2 inhibitors for additional control</li>
-    </ul>
-    
-    <h3>Technological Tools</h3>
-    <ul>
-      <li>Continuous glucose monitors (CGMs)</li>
-      <li>Insulin pumps</li>
-      <li>Smartphone apps for tracking blood sugar, food, and medication</li>
-    </ul>
-    
-    <h2>Conclusion</h2>
-    <p>Living with diabetes requires commitment and daily care, but with the right strategies, people can live full and healthy lives. A personalized care plan developed with healthcare professionals, along with lifestyle adjustments, is crucial to long-term success in diabetes management.</p>
-  `,
-  author: "Dr. Rajesh Kumar",
-  date: "2024-03-22",
-  category: "Endocrinology",
-  image: "/placeholder.svg?height=400&width=800",
-  readTime: "6 min read",
-  tags: ["Diabetes", "Management", "Healthy Living"],
-  authorBio:
-    "Dr. Rajesh Kumar is an experienced endocrinologist specializing in diabetes care and metabolic disorders for over 15 years.",
-  authorImage: "/placeholder.svg?height=100&width=100",
-},
+    id: 3,
+    title: "Diabetes Management: A Comprehensive Guide",
+    content: `
+      <h2>Introduction to Diabetes</h2>
+      <p>Diabetes is a chronic condition that affects how your body turns food into energy. With proper management, individuals with diabetes can lead healthy and active lives. This guide provides a thorough overview of managing diabetes effectively.</p>
+      
+      <h2>Types of Diabetes</h2>
+      <p>There are several types of diabetes, each with distinct characteristics:</p>
+      <ul>
+        <li><strong>Type 1 Diabetes:</strong> An autoimmune condition where the body attacks insulin-producing cells</li>
+        <li><strong>Type 2 Diabetes:</strong> The most common form, often linked to lifestyle and insulin resistance</li>
+        <li><strong>Gestational Diabetes:</strong> Diabetes that develops during pregnancy</li>
+        <li><strong>Prediabetes:</strong> Higher-than-normal blood sugar levels, not yet in the diabetes range</li>
+      </ul>
+      
+      <h2>Prevention and Lifestyle Management</h2>
+      <p>Managing diabetes involves a combination of healthy habits and medical care:</p>
+      
+      <h3>1. Follow a Balanced Diet</h3>
+      <p>Good nutrition is key to blood sugar control:</p>
+      <ul>
+        <li>Focus on high-fiber foods like vegetables, legumes, and whole grains</li>
+        <li>Limit refined carbs and sugary foods</li>
+        <li>Choose lean proteins and healthy fats</li>
+        <li>Monitor carbohydrate intake and portion sizes</li>
+      </ul>
+      
+      <h3>2. Engage in Regular Exercise</h3>
+      <p>Physical activity improves insulin sensitivity and helps manage weight. Aim for at least 150 minutes of moderate exercise each week, such as walking, cycling, or swimming.</p>
+      
+      <h3>3. Monitor Blood Sugar Levels</h3>
+      <p>Regular monitoring helps you stay within target ranges and make informed decisions about food, activity, and medications.</p>
+      
+      <h2>Treatment Options</h2>
+      <p>Diabetes treatment depends on the type and severity:</p>
+      
+      <h3>Medications</h3>
+      <ul>
+        <li>Insulin therapy (for Type 1 and some Type 2 patients)</li>
+        <li>Oral medications to improve insulin sensitivity or reduce sugar absorption</li>
+        <li>GLP-1 receptor agonists and SGLT2 inhibitors for additional control</li>
+      </ul>
+      
+      <h3>Technological Tools</h3>
+      <ul>
+        <li>Continuous glucose monitors (CGMs)</li>
+        <li>Insulin pumps</li>
+        <li>Smartphone apps for tracking blood sugar, food, and medication</li>
+      </ul>
+      
+      <h2>Conclusion</h2>
+      <p>Living with diabetes requires commitment and daily care, but with the right strategies, people can live full and healthy lives. A personalized care plan developed with healthcare professionals, along with lifestyle adjustments, is crucial to long-term success in diabetes management.</p>
+    `,
+    author: "Dr. Rajesh Kumar",
+    date: "2024-03-22",
+    category: "Endocrinology",
+    image: "/placeholder.svg?height=400&width=800",
+    readTime: "6 min read",
+    tags: ["Diabetes", "Management", "Healthy Living"],
+    authorBio:
+      "Dr. Rajesh Kumar is an experienced endocrinologist specializing in diabetes care and metabolic disorders for over 15 years.",
+    authorImage: "/placeholder.svg?height=100&width=100",
+  },
   {
-  id: 4,
-  title: "Pediatric Care: Child Development Milestones",
-  content: `
-    <h2>Introduction to Child Development</h2>
-    <p>Understanding developmental milestones is essential for monitoring a child’s physical, emotional, and cognitive growth. This guide offers an overview of the key stages and how parents and caregivers can support healthy development.</p>
-    
-    <h2>Developmental Domains</h2>
-    <p>Child development is categorized into several domains:</p>
-    <ul>
-      <li><strong>Gross Motor Skills:</strong> Movement using large muscles (e.g., sitting, walking)</li>
-      <li><strong>Fine Motor Skills:</strong> Coordination of small muscles (e.g., grasping, drawing)</li>
-      <li><strong>Language and Communication:</strong> Verbal and non-verbal skills</li>
-      <li><strong>Cognitive Skills:</strong> Problem-solving and learning abilities</li>
-      <li><strong>Social and Emotional Development:</strong> Interacting with others and managing emotions</li>
-    </ul>
-    
-    <h2>Key Milestones by Age</h2>
-    <p>Here are typical milestones, though every child develops at their own pace:</p>
-    
-    <h3>1. Infants (0-12 Months)</h3>
-    <ul>
-      <li>Rolls over, sits without support</li>
-      <li>Babbling, responds to name</li>
-      <li>Shows affection and stranger anxiety</li>
-    </ul>
-    
-    <h3>2. Toddlers (1-3 Years)</h3>
-    <ul>
-      <li>Walks independently, begins to run</li>
-      <li>Uses simple words and phrases</li>
-      <li>Engages in simple pretend play</li>
-    </ul>
-    
-    <h3>3. Preschoolers (3-5 Years)</h3>
-    <ul>
-      <li>Hops, climbs, and begins drawing shapes</li>
-      <li>Speaks in complete sentences</li>
-      <li>Plays cooperatively with peers</li>
-    </ul>
-    
-    <h2>Parental Support and Early Intervention</h2>
-    <p>Parents and caregivers play a crucial role in early childhood development:</p>
-    
-    <h3>Encouragement and Interaction</h3>
-    <ul>
-      <li>Provide stimulating toys and books</li>
-      <li>Encourage play, exploration, and creativity</li>
-      <li>Talk, sing, and read to your child daily</li>
-    </ul>
-    
-    <h3>Monitoring and Consulting Professionals</h3>
-    <ul>
-      <li>Track developmental progress at regular check-ups</li>
-      <li>Seek early intervention if delays are noticed</li>
-      <li>Work closely with pediatricians and therapists</li>
-    </ul>
-    
-    <h2>Conclusion</h2>
-    <p>Each child grows at their own pace, but understanding developmental milestones can help identify strengths and potential concerns early on. Supportive parenting, early education, and regular health check-ups form the foundation of healthy childhood development.</p>
-  `,
-  author: "Dr. Rajesh Kumar",
-  date: "2024-04-10",
-  category: "Pediatrics",
-  image: "/placeholder.svg?height=400&width=800",
-  readTime: "5 min read",
-  tags: ["Child Development", "Milestones", "Pediatric Care"],
-  authorBio:
-    "Dr. Rajesh Kumar is a renowned pediatrician with over 15 years of experience in child development and preventive pediatric care.",
-  authorImage: "/placeholder.svg?height=100&width=100",
-}
+    id: 4,
+    title: "Pediatric Care: Child Development Milestones",
+    content: `
+      <h2>Introduction to Child Development</h2>
+      <p>Understanding developmental milestones is essential for monitoring a child's physical, emotional, and cognitive growth. This guide offers an overview of the key stages and how parents and caregivers can support healthy development.</p>
+      
+      <h2>Developmental Domains</h2>
+      <p>Child development is categorized into several domains:</p>
+      <ul>
+        <li><strong>Gross Motor Skills:</strong> Movement using large muscles (e.g., sitting, walking)</li>
+        <li><strong>Fine Motor Skills:</strong> Coordination of small muscles (e.g., grasping, drawing)</li>
+        <li><strong>Language and Communication:</strong> Verbal and non-verbal skills</li>
+        <li><strong>Cognitive Skills:</strong> Problem-solving and learning abilities</li>
+        <li><strong>Social and Emotional Development:</strong> Interacting with others and managing emotions</li>
+      </ul>
+      
+      <h2>Key Milestones by Age</h2>
+      <p>Here are typical milestones, though every child develops at their own pace:</p>
+      
+      <h3>1. Infants (0-12 Months)</h3>
+      <ul>
+        <li>Rolls over, sits without support</li>
+        <li>Babbling, responds to name</li>
+        <li>Shows affection and stranger anxiety</li>
+      </ul>
+      
+      <h3>2. Toddlers (1-3 Years)</h3>
+      <ul>
+        <li>Walks independently, begins to run</li>
+        <li>Uses simple words and phrases</li>
+        <li>Engages in simple pretend play</li>
+      </ul>
+      
+      <h3>3. Preschoolers (3-5 Years)</h3>
+      <ul>
+        <li>Hops, climbs, and begins drawing shapes</li>
+        <li>Speaks in complete sentences</li>
+        <li>Plays cooperatively with peers</li>
+      </ul>
+      
+      <h2>Parental Support and Early Intervention</h2>
+      <p>Parents and caregivers play a crucial role in early childhood development:</p>
+      
+      <h3>Encouragement and Interaction</h3>
+      <ul>
+        <li>Provide stimulating toys and books</li>
+        <li>Encourage play, exploration, and creativity</li>
+        <li>Talk, sing, and read to your child daily</li>
+      </ul>
+      
+      <h3>Monitoring and Consulting Professionals</h3>
+      <ul>
+        <li>Track developmental progress at regular check-ups</li>
+        <li>Seek early intervention if delays are noticed</li>
+        <li>Work closely with pediatricians and therapists</li>
+      </ul>
+      
+      <h2>Conclusion</h2>
+      <p>Each child grows at their own pace, but understanding developmental milestones can help identify strengths and potential concerns early on. Supportive parenting, early education, and regular health check-ups form the foundation of healthy childhood development.</p>
+    `,
+    author: "Dr. Rajesh Kumar",
+    date: "2024-04-10",
+    category: "Pediatrics",
+    image: "/placeholder.svg?height=400&width=800",
+    readTime: "5 min read",
+    tags: ["Child Development", "Milestones", "Pediatric Care"],
+    authorBio:
+      "Dr. Rajesh Kumar is a renowned pediatrician with over 15 years of experience in child development and preventive pediatric care.",
+    authorImage: "/placeholder.svg?height=100&width=100",
+  },
 ]
 
-export default function BlogPostPage({ params }: { params: { id: string } }) {
-  const [isBookmarked, setIsBookmarked] = useState(false)
-  const [isLiked, setIsLiked] = useState(false)
-
-  const post = blogPosts.find((p) => p.id === Number.parseInt(params.id))
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) {
+  // Await the params to get the actual parameter values
+  const { id } = await params
+  const post = blogPosts.find((p) => p.id === Number.parseInt(id))
 
   if (!post) {
     return (
@@ -340,26 +342,7 @@ export default function BlogPostPage({ params }: { params: { id: string } }) {
               ))}
             </div>
 
-            <div className={styles.articleActions}>
-              <button
-                className={`${styles.actionBtn} ${isLiked ? styles.liked : ""}`}
-                onClick={() => setIsLiked(!isLiked)}
-              >
-                <Heart size={16} />
-                <span>{isLiked ? "Liked" : "Like"}</span>
-              </button>
-              <button
-                className={`${styles.actionBtn} ${isBookmarked ? styles.bookmarked : ""}`}
-                onClick={() => setIsBookmarked(!isBookmarked)}
-              >
-                <Bookmark size={16} />
-                <span>{isBookmarked ? "Saved" : "Save"}</span>
-              </button>
-              <button className={styles.actionBtn}>
-                <Share2 size={16} />
-                <span>Share</span>
-              </button>
-            </div>
+            <BlogPostActions />
           </header>
 
           <div className={styles.featuredImage}>
