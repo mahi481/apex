@@ -1,0 +1,644 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #ffffff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Main Header */
+.mainHeader {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 0;
+  position: relative;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Logo */
+.logoWrapper {
+  position: relative;
+  width: 180px;
+  height: 60px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.logoWrapper:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  object-fit: contain;
+  border-radius: 8px;
+  filter: brightness(1.1);
+}
+
+/* Search Bar */
+.searchBar {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  margin: 0 1rem;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 16px 12px 48px;
+  border: none;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput:focus {
+  outline: none;
+  background: #ffffff;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.searchInput::placeholder {
+  color: #666;
+  font-size: 13px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667eea;
+  width: 18px;
+  height: 18px;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.actionButtons .btn-primary,
+.actionButtons .btn-secondary {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+}
+
+.actionButtons .btn-primary {
+  background: #ff6b6b;
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+}
+
+.actionButtons .btn-primary:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+}
+
+.actionButtons .btn-secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.actionButtons .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Emergency Button */
+.emergencyContainer {
+  position: relative;
+}
+
+.emergencyBtn {
+  padding: 10px 18px;
+  background: #ff4757;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3); }
+  50% { box-shadow: 0 4px 20px rgba(255, 71, 87, 0.5); }
+  100% { box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3); }
+}
+
+.emergencyBtn:hover {
+  background: #ff3742;
+  transform: translateY(-2px);
+  animation: none;
+}
+
+.emergencyTooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 8px;
+  background: #2c3e50;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+}
+
+.emergencyTooltip::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #2c3e50;
+}
+
+.tooltipContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.tooltipContent strong {
+  font-weight: 600;
+}
+
+.tooltipContent small {
+  opacity: 0.8;
+  font-style: italic;
+}
+
+/* Contact Button */
+.contactBtn {
+  padding: 10px 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.contactBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Mobile Menu Toggle */
+.menuToggle {
+  display: none;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.menuToggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Navigation */
+.navigation {
+  background: #ffffff;
+  border-top: 1px solid #e1e8ed;
+  transition: all 0.3s ease;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navList > li {
+  position: relative;
+}
+
+.navList > li > a {
+  display: block;
+  padding: 1rem 0;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navList > li > a:hover {
+  color: #667eea;
+}
+
+.navList > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.3s ease;
+}
+
+.navList > li > a:hover::after {
+  width: 100%;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.navItemWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.mobileExpandBtn {
+  display: none;
+  background: none;
+  border: none;
+  color: #2c3e50;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.mobileExpandBtn:hover {
+  background: #f8f9fa;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+/* Desktop Dropdown Menu */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e1e8ed;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  display: block;
+  padding: 12px 20px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f8f9fa;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background: #f8f9fa;
+  color: #667eea;
+  padding-left: 24px;
+}
+
+/* Mega Menu */
+.megaMenu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e1e8ed;
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover .megaMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.megaMenuContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  padding: 20px;
+}
+
+.megaMenuItem {
+  display: block;
+  padding: 12px 16px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  margin-bottom: 4px;
+}
+
+.megaMenuItem:hover {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  transform: translateX(4px);
+}
+
+/* Mobile Styles */
+.mobileOnly {
+  display: none;
+}
+
+.desktopOnly {
+  display: block;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 1024px) {
+  .actionButtons {
+    gap: 0.5rem;
+  }
+  
+  .actionButtons .btn-primary,
+  .actionButtons .btn-secondary,
+  .emergencyBtn,
+  .contactBtn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .searchBar {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    gap: 1rem;
+  }
+  
+  .logoWrapper {
+    width: 140px;
+    height: 50px;
+  }
+  
+  .searchBar {
+    display: none;
+  }
+  
+  .actionButtons {
+    display: none;
+  }
+  
+  .menuToggle {
+    display: block;
+  }
+  
+  /* Mobile Navigation */
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+  }
+  
+  .mobileMenuOpen {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .navList {
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem;
+  }
+  
+  .navList > li {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .navList > li:last-child {
+    border-bottom: none;
+  }
+  
+  .navList > li > a {
+    padding: 1rem 0;
+    font-size: 16px;
+  }
+  
+  .navItemWrapper {
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .mobileExpandBtn {
+    display: block;
+  }
+  
+  .mobileSubmenu {
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  
+  .mobileSubmenuItem {
+    display: block;
+    padding: 12px 20px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+  }
+  
+  .mobileSubmenuItem:last-child {
+    border-bottom: none;
+  }
+  
+  .mobileSubmenuItem:hover {
+    background: #e9ecef;
+    color: #667eea;
+    padding-left: 24px;
+  }
+  
+  .mobileOnly {
+    display: block;
+  }
+  
+  .desktopOnly {
+    display: none;
+  }
+  
+  /* Hide desktop dropdowns on mobile */
+  .dropdownMenu,
+  .megaMenu {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeader {
+    padding: 0.75rem 0;
+  }
+  
+  .headerContent {
+    padding: 0 0.75rem;
+  }
+  
+  .logoWrapper {
+    width: 120px;
+    height: 40px;
+  }
+  
+  .navList {
+    padding: 0.75rem;
+  }
+  
+  .navList > li > a {
+    font-size: 15px;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Focus styles for accessibility */
+.searchInput:focus,
+.actionButtons button:focus,
+.actionButtons a:focus,
+.navList a:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Loading animation for logo */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects for better UX */
+.navList > li {
+  transition: all 0.3s ease;
+}
+
+.navList > li:hover {
+  transform: translateY(-1px);
+}
+
+/* Custom scrollbar for dropdown menus */
+.megaMenuContent::-webkit-scrollbar {
+  width: 4px;
+}
+
+.megaMenuContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+}
+
+.megaMenuContent::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 2px;
+}
+
+.megaMenuContent::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}

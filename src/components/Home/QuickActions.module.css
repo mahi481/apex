@@ -1,0 +1,153 @@
+.quickActions {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, var(--bg-light) 0%, #ffffff 100%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.actionWrapper {
+  position: relative;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-light);
+  color: var(--primary-blue);
+}
+
+.findDoctor .icon {
+  background: rgba(0, 102, 204, 0.1);
+}
+
+.bookAppointment .icon {
+  background: rgba(255, 107, 53, 0.1);
+  color: var(--accent-orange);
+}
+
+.emergency .icon {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+/* Emergency Tooltip Styles */
+.emergencyTooltip {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c3e50;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 0;
+  min-width: 200px;
+  animation: fadeIn 0.3s ease;
+}
+
+.tooltipContent {
+  text-align: center;
+}
+
+.location {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+  color: #ecf0f1;
+}
+
+.phoneNumber {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3498db;
+  margin-bottom: 4px;
+}
+
+.instruction {
+  font-size: 12px;
+  color: #bdc3c7;
+  font-style: italic;
+}
+
+.tooltipArrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #2c3e50;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .quickActions {
+    padding: 2.5rem 0;
+  }
+
+  .emergencyTooltip {
+    top: -110px;
+    min-width: 180px;
+    padding: 10px 14px;
+  }
+
+  .phoneNumber {
+    font-size: 15px;
+  }
+
+  .location {
+    font-size: 13px;
+  }
+
+  .instruction {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .emergencyTooltip {
+    top: -100px;
+    min-width: 160px;
+    padding: 8px 12px;
+  }
+}

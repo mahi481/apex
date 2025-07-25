@@ -1,0 +1,157 @@
+.featured {
+  padding: 4.5rem 0;
+  background: #f9fafb;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header h2 {
+  font-size: 2.25rem;
+  color: var(--primary-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.header p {
+  color: var(--text-light);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: white;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.imageWrap {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  padding: .5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.icon {
+  width: 56px;
+  height: 56px;
+  background: var(--primary-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cardio .icon {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+.neuro .icon {
+  background: linear-gradient(135deg, #7c3aed, #8b5cf6);
+}
+
+.ortho .icon {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-blue);
+}
+
+.content p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+.link {
+  font-weight: 600;
+  color: var(--primary-blue);
+  transition: color 0.3s ease;
+  align-self: flex-start;
+}
+
+.card:hover .link {
+  color: #1e40af;
+}
+
+.ctaWrap {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .featured {
+    padding: 3rem 0;
+  }
+
+  .header h2 {
+    font-size: 1.875rem;
+  }
+
+  .card {
+    height: 380px;
+  }
+
+  .imageWrap {
+    height: 180px;
+  }
+
+  .content {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    height: 360px;
+  }
+
+  .imageWrap {
+    height: 160px;
+  }
+}
