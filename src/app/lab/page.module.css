@@ -1,0 +1,231 @@
+.labPage {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.pageHeader {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.headerImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+
+.headerContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 3rem 2rem 2rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.headerContent h1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.headerContent p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 600px;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  color: var(--primary-blue);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.serviceIcon {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.serviceCard h3 {
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.serviceCard p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.testsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.testTag {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.featureIcon {
+  color: var(--accent-orange);
+  margin-bottom: 1.5rem;
+}
+
+.featureCard h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.featureCard p {
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.timingSection {
+  background: linear-gradient(135deg, var(--primary-green), #27ae60);
+  border-radius: 20px;
+  padding: 3rem;
+}
+
+.timingCard {
+  color: white;
+  text-align: center;
+}
+
+.timingCard h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.timingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timingItem {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.timingItem h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.timingItem p {
+  margin: 0.5rem 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .headerContent h1 {
+    font-size: 2.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content {
+    padding: 0 1rem;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+
+  .servicesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .timingSection {
+    padding: 2rem 1rem;
+  }
+
+  .timingGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

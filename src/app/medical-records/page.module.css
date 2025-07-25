@@ -1,0 +1,67 @@
+.recordsSection {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.imageWrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.recordImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  margin-top: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.content h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.steps {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.steps li {
+  margin-bottom: 0.5rem;
+}
+
+.note {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: #2d3436;
+}

@@ -1,0 +1,127 @@
+.portalPage {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.pageHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.pageHeader h1 {
+  font-size: 3rem;
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pageHeader p {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sectionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.section h2 {
+  color: var(--primary-blue);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.portalCard {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.portalCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-shrink: 0;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardContent h3 {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.cardContent p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.readMore {
+  color: var(--accent-orange);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.portalCard:hover .readMore {
+  color: var(--primary-blue);
+}
+
+@media (max-width: 768px) {
+  .portalPage {
+    padding: 1rem 0;
+  }
+
+  .pageHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .portalCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cardIcon {
+    margin: 0 auto;
+  }
+}
