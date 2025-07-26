@@ -138,7 +138,7 @@ const AboutPage = () => {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/images/apex.jpg"
+                src="/images/1.png"
                 alt="Apex Hospital Building"
                 width={600}
                 height={400}
