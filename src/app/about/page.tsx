@@ -5,22 +5,22 @@ import styles from "./page.module.css"
 const AboutPage = () => {
   const teamMembers = [
     {
-      name: "Dr. Rajesh Kumar",
-      position: "Chief Medical Officer",
+      name: "Dr. RIZWAN UL HAQUE",
+      position: "Chairman",
       specialization: "Cardiology",
       experience: "25+ years",
       image: "/images/sir.JPG",
     },
     {
-      name: "Dr. Priya Sharma",
-      position: "Head of Surgery",
+      name: "Dr. MEHAJABEEN HAQUE",
+      position: "CEO",
       specialization: "General Surgery",
       experience: "20+ years",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/maam.jpg",
     },
     {
-      name: "Dr. Amit Patel",
-      position: "Director of Emergency",
+      name: "Dr. FAROOQ MANIYAR",
+      position: "Managing Director",
       specialization: "Emergency Medicine",
       experience: "18+ years",
       image: "/placeholder.svg?height=300&width=300",
