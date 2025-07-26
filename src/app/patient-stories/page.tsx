@@ -11,7 +11,7 @@ export default function PatientStoriesPage() {
       condition: "Cardiac Surgery",
       story:
         "After my heart attack, I was terrified. But the cardiac team at Apex Hospital gave me hope and a new lease on life. The surgery was successful, and the post-operative care was exceptional. Today, I am back to my normal activities and feeling stronger than ever.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/rajesh.jpg",
       date: "2024-01-10",
       rating: 5,
     },
@@ -22,18 +22,18 @@ export default function PatientStoriesPage() {
       condition: "Maternity Care",
       story:
         "The maternity ward at Apex Hospital made my delivery experience wonderful. The doctors and nurses were so caring and supportive. They made sure both my baby and I were comfortable throughout. I could not have asked for better care during such an important time.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/sunita.jpg",
       date: "2024-01-05",
       rating: 5,
     },
     {
       id: 3,
       name: "Amit Kulkarni",
-      age: 52,
+      age: 59,
       condition: "Orthopedic Surgery",
       story:
         "I had been suffering from knee pain for years. The orthopedic team at Apex Hospital performed a knee replacement surgery that changed my life. The rehabilitation program was excellent, and now I can walk without pain. Thank you for giving me my mobility back!",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/amit.jpg",
       date: "2023-12-28",
       rating: 5,
     },
@@ -44,7 +44,7 @@ export default function PatientStoriesPage() {
       condition: "Cancer Treatment",
       story:
         "Being diagnosed with cancer was devastating, but the oncology team at Apex Hospital stood by me throughout my treatment journey. Their expertise, compassion, and constant support helped me fight and win against cancer. I am now cancer-free and grateful for their care.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/priya.jpg",
       date: "2023-12-20",
       rating: 5,
     },
