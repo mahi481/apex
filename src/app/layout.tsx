@@ -32,7 +32,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <StickyElements />
-        <AdmissionPopup />
+       
       </body>
     </html>
   )
