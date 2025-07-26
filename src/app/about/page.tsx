@@ -136,23 +136,15 @@ const AboutPage = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.videoSection}>
-              <div className={styles.videoContainer}>
-    <video
-      src="/videos/ww.mp4"
-      width={500}
-      height={300}
-      className={styles.videoThumbnail}
-      autoPlay
-      muted
-      loop
-      playsInline
-    />
-                
-              </div>
-              <p>Watch our hospital tour video</p>
-            </div>
-          </div>
+            <div className={styles.heroImage}>
+              <Image
+                src="/images/apex.jpg"
+                alt="Apex Hospital Building"
+                width={600}
+                height={400}
+                className={styles.hospitalImage}
+              />
+            </div>       </div>
         </div>
       </section>
 
