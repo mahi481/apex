@@ -5,7 +5,7 @@ import "./globals.css"
 import Header from "@/components/Header/Header"
 import Footer from "@/components/Footer/Footer"
 import StickyElements from "@/components/StickyElements/StickyElements"
-import AdmissionPopup from "@/components/AdmissionPopup/AdmissionPopup"
+
 
 const inter = Inter({ subsets: ["latin"] })
 const poppins = Poppins({
