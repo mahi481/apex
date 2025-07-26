@@ -140,7 +140,7 @@ const Gallery = () => {
       category: "departments",
       title: "Dermatology Clinic",
       description: "Skin care and cosmetic treatment center",
-       image: "/images/skin.jpg",
+       image: "/images/skin copy.jpg",
     },
    
    
@@ -160,8 +160,8 @@ const Gallery = () => {
       description: "Annual healthcare symposium and workshops",
        image: "/images/main.jpg",
     },
-    { id: 30, category: "events", title: "Health Camp", description: "Free health screening camp for community",  image: "/images/main.JPG", },
-    { id: 31, category: "events", title: "Blood Donation Drive", description: "Community blood donation campaign",  image: "/images/main.JPG", },
+    { id: 30, category: "events", title: "Health Camp", description: "Free health screening camp for community",  image: "/images/healthcamp.jpg", },
+    { id: 31, category: "events", title: "Blood Donation Drive", description: "Community blood donation campaign",  image: "/images/blood.jpg", },
     {
       id: 32,
       category: "events",
