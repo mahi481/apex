@@ -24,7 +24,7 @@ const Gallery = () => {
       category: "facilities",
       title: "Main Hospital Building",
       description: "Modern 500-bed facility with state-of-the-art infrastructure",
-      image: "/images/main.JPG", 
+      image: "/images/main.jpg", 
     },
     {
       id: 2,
