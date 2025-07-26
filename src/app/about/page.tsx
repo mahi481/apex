@@ -9,7 +9,7 @@ const AboutPage = () => {
       position: "Chief Medical Officer",
       specialization: "Cardiology",
       experience: "25+ years",
-      image: "/images/sir.jpg",
+      image: "/images/sir.JPG",
     },
     {
       name: "Dr. Priya Sharma",
@@ -25,13 +25,7 @@ const AboutPage = () => {
       experience: "18+ years",
       image: "/placeholder.svg?height=300&width=300",
     },
-    {
-      name: "Dr. Sunita Rao",
-      position: "Head of Pediatrics",
-      specialization: "Pediatrics",
-      experience: "22+ years",
-      image: "/placeholder.svg?height=300&width=300",
-    },
+   
   ]
 
   const achievements = [
