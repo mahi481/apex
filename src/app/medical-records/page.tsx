@@ -10,7 +10,7 @@ const MedicalRecords = () => {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/medical-records.jpg"
+            src="/images/record.jpg"
             alt="Medical Records"
             width={1000}
             height={400}
