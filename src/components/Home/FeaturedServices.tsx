@@ -19,7 +19,7 @@ const services: ServiceCard[] = [
     description: "Advanced cardiac care with cutting-edge technology and experienced cardiologists.",
     icon: <Heart size={28} />,
     href: "/specialities/cardiology",
-    img: "/images/skin.jpg",
+    img: "/images/heart (2).jpg",
     bg: styles.cardio,
   },
   {
@@ -27,7 +27,7 @@ const services: ServiceCard[] = [
     description: "Comprehensive neurological care for brain and nervous-system disorders.",
     icon: <Brain size={28} />,
     href: "/specialities/neurology",
-    img: "/placeholder.svg?height=300&width=400",
+    img: "/images/brain.jpg",
     bg: styles.neuro,
   },
   {
@@ -35,7 +35,7 @@ const services: ServiceCard[] = [
     description: "Expert bone and joint care with minimally invasive surgical techniques.",
     icon: <Bone size={28} />,
     href: "/specialities/orthopedics",
-    img: "/placeholder.svg?height=300&width=400",
+    img: "/images/bone.jpg",
     bg: styles.ortho,
   },
 ]
