@@ -26,7 +26,7 @@ export default function DormitoryPage() {
       <div className="container">
         <header className={styles.header}>
           <img
-            src="/images/dormitory.jpg"
+            src="/images/domitory.jpg"
             alt="Dormitory Room"
             className={styles.heroImage}
           />
