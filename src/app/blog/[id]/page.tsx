@@ -65,7 +65,7 @@ const blogPosts = [
     author: "Dr. Rajesh Kumar",
     date: "2024-01-15",
     category: "Cardiology",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/images/cardio.jpg",
     readTime: "5 min read",
     tags: ["Heart Health", "Prevention", "Treatment"],
     authorBio:
@@ -141,7 +141,7 @@ const blogPosts = [
     author: "Dr. Priya Sharma",
     date: "2024-01-10",
     category: "Psychiatry",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/images/mental.jpg",
     readTime: "7 min read",
     tags: ["Mental Health", "Awareness", "Stigma"],
     authorBio:
@@ -205,7 +205,7 @@ const blogPosts = [
     author: "Dr. Rajesh Kumar",
     date: "2024-03-22",
     category: "Endocrinology",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/images/diabetes.jpg",
     readTime: "6 min read",
     tags: ["Diabetes", "Management", "Healthy Living"],
     authorBio:
@@ -276,7 +276,7 @@ const blogPosts = [
     author: "Dr. Rajesh Kumar",
     date: "2024-04-10",
     category: "Pediatrics",
-    image: "/placeholder.svg?height=400&width=800",
+    image: "/images/childcare.jpg",
     readTime: "5 min read",
     tags: ["Child Development", "Milestones", "Pediatric Care"],
     authorBio:
