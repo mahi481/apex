@@ -11,22 +11,22 @@ type Tip = {
 
 const tips: Tip[] = [
   {
-    title: "5 Heart-Healthy Habits You Can Start Today",
-    excerpt: "Simple lifestyle changes that significantly reduce your risk of heart disease.",
-    href: "/blog/heart-healthy-habits",
-    img: "/placeholder.svg?height=240&width=350",
+    title: "Understanding Heart Disease: Prevention and Treatment",
+    excerpt: "Learn about the latest advances in cardiac care and how to maintain a healthy heart through proper diet, exercise, and medical intervention.",
+    href: "/blog/1",
+    img: "/images/cardio.jpg",
   },
   {
-    title: "The Importance of Regular Health Check-ups",
-    excerpt: "Early detection through routine screening can save lives—here’s why you shouldn’t skip.",
-    href: "/blog/regular-health-checkups",
-    img: "/placeholder.svg?height=240&width=350",
+    title: "Mental Health Awareness: Breaking the Stigma",
+    excerpt: "Understanding mental health issues and the importance of seeking professional help in today's fast-paced world.",
+    href: "/blog/2",
+    img: "/images/mental.jpg",
   },
   {
-    title: "Managing Stress for Better Mental Health",
-    excerpt: "Practical techniques to keep anxiety in check and improve overall well-being.",
-    href: "/blog/stress-management-tips",
-    img: "/placeholder.svg?height=240&width=350",
+    title: "Diabetes Management: A Comprehensive Guide",
+    excerpt: "Essential tips for managing diabetes and maintaining a healthy lifestyle with proper nutrition and monitoring.",
+    href: "/blog/3",
+    img: "/images/diabetes.jpg",
   },
 ]
 
