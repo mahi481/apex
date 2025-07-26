@@ -16,19 +16,19 @@ const testimonials: Testimonial[] = [
     name: "Rohit Sharma",
     role: "Cardiac Patient",
     text: "The doctors at Apex Hospital saved my life. Their expertise and compassionate care made all the difference.",
-    avatar: "/placeholder.svg?height=120&width=120",
+    avatar: "/images/patient1.jpg",
   },
   {
     name: "Priya Deshmukh",
     role: "Orthopedic Patient",
     text: "I was able to walk again without pain thanks to the incredible ortho team. Highly recommend Apex Hospital!",
-    avatar: "/placeholder.svg?height=120&width=120",
+    avatar: "/images/patient2.jpg",
   },
   {
     name: "Amit Kulkarni",
     role: "Neurology Patient",
     text: "State-of-the-art facilities and friendly staff. I felt safe and cared for throughout my treatment.",
-    avatar: "/placeholder.svg?height=120&width=120",
+    avatar: "/images/patient3.png",
   },
 ]
 
