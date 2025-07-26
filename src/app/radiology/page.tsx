@@ -10,7 +10,7 @@ const Radiology = () => {
       <div className={styles.container}>
         <div className={styles.imageWrapper}>
           <Image
-            src="/images/radiology.jpg"
+            src="/images/radio.jpg"
             alt="Radiology Department"
             width={1000}
             height={400}
