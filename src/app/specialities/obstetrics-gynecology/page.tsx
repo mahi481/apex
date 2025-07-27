@@ -49,7 +49,7 @@ export default function ObstetricsGynecologyPage() {
                 Obstetrics & Gynecology Department
               </h1>
               <p>
-                Comprehensive women's healthcare including pregnancy care, fertility treatments, gynecological surgeries, and preventive health services for all stages of life.
+                Comprehensive womens healthcare including pregnancy care, fertility treatments, gynecological surgeries, and preventive health services for all stages of life.
               </p>
               <div className={styles.heroStats}>
                 <div className={styles.stat}>
@@ -92,7 +92,7 @@ export default function ObstetricsGynecologyPage() {
         <section id="overview" className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>Overview</h2>
-            <p>Complete women's healthcare with advanced obstetric and gynecological services</p>
+            <p>Complete womens healthcare with advanced obstetric and gynecological services</p>
           </div>
 
           <div className={styles.overviewContent}>
@@ -195,7 +195,7 @@ export default function ObstetricsGynecologyPage() {
           <div className={styles.appointmentSection}>
             <div className={styles.appointmentContent}>
               <h2>Book Your Appointment</h2>
-              <p>Schedule a consultation with our women's health specialists</p>
+              <p>Schedule a consultation with our womens health specialists</p>
               <div className={styles.appointmentFeatures}>
                 <div className={styles.feature}>
                   <Calendar size={24} />
