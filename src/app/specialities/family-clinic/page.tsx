@@ -109,7 +109,7 @@ export default function FamilyClinicPage() {
                 <li>Chronic Disease Management</li>
                 <li>Preventive Care Screenings</li>
                 <li>Minor Injuries & Illness Treatment</li>
-                <li>Women's Health Services</li>
+                <li>Womens Health Services</li>
                 <li>Pediatric Care</li>
                 <li>Geriatric Care</li>
               </ul>
