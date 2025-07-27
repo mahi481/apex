@@ -7,33 +7,33 @@ import styles from "../cardiology/page.module.css"
 
 const doctors = [
   {
-    name: "Dr. Anand Gupta",
-    designation: "Chief Orthopedic Surgeon",
-    experience: "19+ years",
-    specialization: "Joint Replacement & Sports Medicine",
+    name: "Dr. Sunita Agarwal",
+    designation: "Chief Ophthalmologist",
+    experience: "20+ years",
+    specialization: "Cataract & Retinal Surgery",
     image: "/placeholder.svg?height=300&width=300",
-    qualifications: "MS (Orthopedics), DNB, FASM",
+    qualifications: "MS (Ophthalmology), FRCS, FICO",
   },
   {
-    name: "Dr. Meera Joshi",
-    designation: "Senior Orthopedic Surgeon",
-    experience: "13+ years",
-    specialization: "Spine Surgery & Trauma",
+    name: "Dr. Vikram Singh",
+    designation: "Senior Eye Surgeon",
+    experience: "15+ years",
+    specialization: "Corneal Transplant & Glaucoma",
     image: "/placeholder.svg?height=300&width=300",
-    qualifications: "MS (Orthopedics), MCh (Spine), FIOT",
+    qualifications: "MS (Ophthalmology), DNB, FCPS",
   },
 ]
 
 const schedule = [
-  { day: "Monday", time: "8:00 AM - 7:00 PM", doctor: "Dr. Anand Gupta" },
-  { day: "Tuesday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Meera Joshi" },
-  { day: "Wednesday", time: "8:00 AM - 7:00 PM", doctor: "Dr. Anand Gupta" },
-  { day: "Thursday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Meera Joshi" },
-  { day: "Friday", time: "8:00 AM - 7:00 PM", doctor: "Dr. Anand Gupta" },
-  { day: "Saturday", time: "8:00 AM - 3:00 PM", doctor: "Both Doctors" },
+  { day: "Monday", time: "8:00 AM - 6:00 PM", doctor: "Dr. Sunita Agarwal" },
+  { day: "Tuesday", time: "9:00 AM - 7:00 PM", doctor: "Dr. Vikram Singh" },
+  { day: "Wednesday", time: "8:00 AM - 6:00 PM", doctor: "Dr. Sunita Agarwal" },
+  { day: "Thursday", time: "9:00 AM - 7:00 PM", doctor: "Dr. Vikram Singh" },
+  { day: "Friday", time: "8:00 AM - 6:00 PM", doctor: "Dr. Sunita Agarwal" },
+  { day: "Saturday", time: "8:00 AM - 4:00 PM", doctor: "Both Doctors" },
 ]
 
-export default function OrthopedicsPage() {
+export default function OphthalmologyPage() {
   return (
     <div className={styles.specialityPage}>
       <div className="container">
@@ -42,26 +42,26 @@ export default function OrthopedicsPage() {
           <div className={styles.heroContent}>
             <div className={styles.heroText}>
               <div className={styles.breadcrumb}>
-                <Link href="/specialities">Specialities</Link> / Orthopedics
+                <Link href="/specialities">Specialities</Link> / Ophthalmology
               </div>
               <h1>
                 <Stethoscope size={40} />
-                Orthopedics Department
+                Ophthalmology Department
               </h1>
               <p>
-                Comprehensive bone and joint care including joint replacement, sports medicine, trauma care, and spine surgery. Our orthopedic specialists provide advanced treatment for all musculoskeletal conditions.
+                Comprehensive eye care services including routine eye exams, advanced surgical procedures, and treatment of complex eye conditions with state-of-the-art technology and expert care.
               </p>
               <div className={styles.heroStats}>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>4200+</span>
-                  <span className={styles.statLabel}>Surgeries Completed</span>
+                  <span className={styles.statNumber}>8000+</span>
+                  <span className={styles.statLabel}>Eye Surgeries</span>
                 </div>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>94%</span>
-                  <span className={styles.statLabel}>Patient Satisfaction</span>
+                  <span className={styles.statNumber}>98%</span>
+                  <span className={styles.statLabel}>Success Rate</span>
                 </div>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>15+</span>
+                  <span className={styles.statNumber}>20+</span>
                   <span className={styles.statLabel}>Years of Excellence</span>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function OrthopedicsPage() {
             <div className={styles.heroImage}>
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="Orthopedics Department"
+                alt="Ophthalmology Department"
                 width={600}
                 height={400}
                 className={styles.departmentImage}
@@ -92,44 +92,44 @@ export default function OrthopedicsPage() {
         <section id="overview" className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>Overview</h2>
-            <p>Advanced orthopedic care for bones, joints, and musculoskeletal conditions</p>
+            <p>Advanced eye care with precision surgery and comprehensive treatment</p>
           </div>
 
           <div className={styles.overviewContent}>
             <div className={styles.overviewText}>
               <h3>About Our Department</h3>
               <p>
-                Our Orthopedics department specializes in the diagnosis and treatment of musculoskeletal conditions, from routine injuries to complex joint replacements. We combine advanced surgical techniques with comprehensive rehabilitation programs.
+                Our Ophthalmology department provides comprehensive eye care services with cutting-edge technology and highly skilled surgeons. We are committed to preserving and improving vision for patients of all ages.
               </p>
 
               <h3>Services We Offer</h3>
               <ul className={styles.servicesList}>
-                <li>Joint Replacement Surgery</li>
-                <li>Arthroscopic Surgery</li>
-                <li>Sports Medicine</li>
-                <li>Spine Surgery</li>
-                <li>Trauma & Fracture Care</li>
-                <li>Pediatric Orthopedics</li>
-                <li>Hand & Upper Extremity</li>
-                <li>Physical Therapy</li>
+                <li>Cataract Surgery</li>
+                <li>Retinal Surgery</li>
+                <li>Glaucoma Treatment</li>
+                <li>Corneal Transplantation</li>
+                <li>LASIK & Refractive Surgery</li>
+                <li>Pediatric Ophthalmology</li>
+                <li>Diabetic Eye Care</li>
+                <li>Emergency Eye Care</li>
               </ul>
 
               <h3>Advanced Facilities</h3>
               <div className={styles.facilitiesGrid}>
                 <div className={styles.facilityCard}>
                   <Award size={24} />
-                  <h4>Advanced Imaging</h4>
-                  <p>MRI, CT scan, and X-ray facilities for accurate diagnosis</p>
+                  <h4>LASIK Suite</h4>
+                  <p>Advanced laser technology for vision correction surgery</p>
                 </div>
                 <div className={styles.facilityCard}>
                   <Stethoscope size={24} />
-                  <h4>Arthroscopy Suite</h4>
-                  <p>Minimally invasive surgery equipment for joint procedures</p>
+                  <h4>Surgical Microscopes</h4>
+                  <p>High-precision microscopes for delicate eye surgeries</p>
                 </div>
                 <div className={styles.facilityCard}>
                   <Heart size={24} />
-                  <h4>Rehabilitation Center</h4>
-                  <p>Comprehensive physiotherapy and recovery programs</p>
+                  <h4>OCT Imaging</h4>
+                  <p>Optical coherence tomography for detailed retinal imaging</p>
                 </div>
               </div>
             </div>
@@ -139,8 +139,8 @@ export default function OrthopedicsPage() {
         {/* Doctors Section */}
         <section id="doctors" className={styles.section}>
           <div className={styles.sectionHeader}>
-            <h2>Our Orthopedic Surgeons</h2>
-            <p>Meet our team of experienced bone and joint specialists</p>
+            <h2>Our Ophthalmologists</h2>
+            <p>Meet our team of experienced eye care specialists</p>
           </div>
 
           <div className={styles.doctorsGrid}>
@@ -195,7 +195,7 @@ export default function OrthopedicsPage() {
           <div className={styles.appointmentSection}>
             <div className={styles.appointmentContent}>
               <h2>Book Your Appointment</h2>
-              <p>Schedule a consultation with our orthopedic specialists for comprehensive bone and joint care</p>
+              <p>Schedule a comprehensive eye examination with our expert ophthalmologists</p>
               <div className={styles.appointmentFeatures}>
                 <div className={styles.feature}>
                   <Calendar size={24} />
@@ -207,7 +207,7 @@ export default function OrthopedicsPage() {
                 </div>
                 <div className={styles.feature}>
                   <Users size={24} />
-                  <span>Expert Orthopedists</span>
+                  <span>Expert Ophthalmologists</span>
                 </div>
               </div>
               <Link href="/appointment" className="btn-primary">

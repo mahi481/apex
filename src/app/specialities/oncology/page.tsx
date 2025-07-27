@@ -7,33 +7,33 @@ import styles from "../cardiology/page.module.css"
 
 const doctors = [
   {
-    name: "Dr. Anand Gupta",
-    designation: "Chief Orthopedic Surgeon",
-    experience: "19+ years",
-    specialization: "Joint Replacement & Sports Medicine",
+    name: "Dr. Rajesh Kumar",
+    designation: "Chief Oncologist",
+    experience: "18+ years",
+    specialization: "Medical Oncology & Chemotherapy",
     image: "/placeholder.svg?height=300&width=300",
-    qualifications: "MS (Orthopedics), DNB, FASM",
+    qualifications: "MD (Oncology), DNB, ECMO",
   },
   {
-    name: "Dr. Meera Joshi",
-    designation: "Senior Orthopedic Surgeon",
-    experience: "13+ years",
-    specialization: "Spine Surgery & Trauma",
+    name: "Dr. Priya Patel",
+    designation: "Senior Radiation Oncologist",
+    experience: "14+ years",
+    specialization: "Radiation Therapy & Palliative Care",
     image: "/placeholder.svg?height=300&width=300",
-    qualifications: "MS (Orthopedics), MCh (Spine), FIOT",
+    qualifications: "MD (Radiation Oncology), DMRT, FICRO",
   },
 ]
 
 const schedule = [
-  { day: "Monday", time: "8:00 AM - 7:00 PM", doctor: "Dr. Anand Gupta" },
-  { day: "Tuesday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Meera Joshi" },
-  { day: "Wednesday", time: "8:00 AM - 7:00 PM", doctor: "Dr. Anand Gupta" },
-  { day: "Thursday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Meera Joshi" },
-  { day: "Friday", time: "8:00 AM - 7:00 PM", doctor: "Dr. Anand Gupta" },
-  { day: "Saturday", time: "8:00 AM - 3:00 PM", doctor: "Both Doctors" },
+  { day: "Monday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Rajesh Kumar" },
+  { day: "Tuesday", time: "10:00 AM - 7:00 PM", doctor: "Dr. Priya Patel" },
+  { day: "Wednesday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Rajesh Kumar" },
+  { day: "Thursday", time: "10:00 AM - 7:00 PM", doctor: "Dr. Priya Patel" },
+  { day: "Friday", time: "9:00 AM - 6:00 PM", doctor: "Dr. Rajesh Kumar" },
+  { day: "Saturday", time: "9:00 AM - 2:00 PM", doctor: "Both Doctors" },
 ]
 
-export default function OrthopedicsPage() {
+export default function OncologyPage() {
   return (
     <div className={styles.specialityPage}>
       <div className="container">
@@ -42,34 +42,34 @@ export default function OrthopedicsPage() {
           <div className={styles.heroContent}>
             <div className={styles.heroText}>
               <div className={styles.breadcrumb}>
-                <Link href="/specialities">Specialities</Link> / Orthopedics
+                <Link href="/specialities">Specialities</Link> / Oncology
               </div>
               <h1>
                 <Stethoscope size={40} />
-                Orthopedics Department
+                Oncology Department
               </h1>
               <p>
-                Comprehensive bone and joint care including joint replacement, sports medicine, trauma care, and spine surgery. Our orthopedic specialists provide advanced treatment for all musculoskeletal conditions.
+                Comprehensive cancer care including diagnosis, treatment, and support services. Our multidisciplinary team provides personalized treatment plans with cutting-edge technology and compassionate care.
               </p>
               <div className={styles.heroStats}>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>4200+</span>
-                  <span className={styles.statLabel}>Surgeries Completed</span>
+                  <span className={styles.statNumber}>5000+</span>
+                  <span className={styles.statLabel}>Cancer Patients Treated</span>
                 </div>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>94%</span>
-                  <span className={styles.statLabel}>Patient Satisfaction</span>
+                  <span className={styles.statNumber}>85%</span>
+                  <span className={styles.statLabel}>Success Rate</span>
                 </div>
                 <div className={styles.stat}>
-                  <span className={styles.statNumber}>15+</span>
-                  <span className={styles.statLabel}>Years of Excellence</span>
+                  <span className={styles.statNumber}>24/7</span>
+                  <span className={styles.statLabel}>Emergency Care</span>
                 </div>
               </div>
             </div>
             <div className={styles.heroImage}>
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="Orthopedics Department"
+                alt="Oncology Department"
                 width={600}
                 height={400}
                 className={styles.departmentImage}
@@ -92,44 +92,44 @@ export default function OrthopedicsPage() {
         <section id="overview" className={styles.section}>
           <div className={styles.sectionHeader}>
             <h2>Overview</h2>
-            <p>Advanced orthopedic care for bones, joints, and musculoskeletal conditions</p>
+            <p>Advanced cancer treatment with personalized care and cutting-edge technology</p>
           </div>
 
           <div className={styles.overviewContent}>
             <div className={styles.overviewText}>
               <h3>About Our Department</h3>
               <p>
-                Our Orthopedics department specializes in the diagnosis and treatment of musculoskeletal conditions, from routine injuries to complex joint replacements. We combine advanced surgical techniques with comprehensive rehabilitation programs.
+                Our Oncology department offers comprehensive cancer care with state-of-the-art facilities and a multidisciplinary approach. We focus on providing personalized treatment plans and emotional support throughout the cancer journey.
               </p>
 
               <h3>Services We Offer</h3>
               <ul className={styles.servicesList}>
-                <li>Joint Replacement Surgery</li>
-                <li>Arthroscopic Surgery</li>
-                <li>Sports Medicine</li>
-                <li>Spine Surgery</li>
-                <li>Trauma & Fracture Care</li>
-                <li>Pediatric Orthopedics</li>
-                <li>Hand & Upper Extremity</li>
-                <li>Physical Therapy</li>
+                <li>Medical Oncology</li>
+                <li>Radiation Therapy</li>
+                <li>Surgical Oncology</li>
+                <li>Chemotherapy Treatment</li>
+                <li>Immunotherapy</li>
+                <li>Palliative Care</li>
+                <li>Cancer Screening Programs</li>
+                <li>Genetic Counseling</li>
               </ul>
 
               <h3>Advanced Facilities</h3>
               <div className={styles.facilitiesGrid}>
                 <div className={styles.facilityCard}>
                   <Award size={24} />
-                  <h4>Advanced Imaging</h4>
-                  <p>MRI, CT scan, and X-ray facilities for accurate diagnosis</p>
+                  <h4>Linear Accelerator</h4>
+                  <p>Advanced radiation therapy equipment for precise treatment</p>
                 </div>
                 <div className={styles.facilityCard}>
                   <Stethoscope size={24} />
-                  <h4>Arthroscopy Suite</h4>
-                  <p>Minimally invasive surgery equipment for joint procedures</p>
+                  <h4>Chemotherapy Suite</h4>
+                  <p>Comfortable treatment rooms with modern infusion systems</p>
                 </div>
                 <div className={styles.facilityCard}>
                   <Heart size={24} />
-                  <h4>Rehabilitation Center</h4>
-                  <p>Comprehensive physiotherapy and recovery programs</p>
+                  <h4>Support Center</h4>
+                  <p>Counseling and support services for patients and families</p>
                 </div>
               </div>
             </div>
@@ -139,8 +139,8 @@ export default function OrthopedicsPage() {
         {/* Doctors Section */}
         <section id="doctors" className={styles.section}>
           <div className={styles.sectionHeader}>
-            <h2>Our Orthopedic Surgeons</h2>
-            <p>Meet our team of experienced bone and joint specialists</p>
+            <h2>Our Oncologists</h2>
+            <p>Meet our team of experienced cancer specialists</p>
           </div>
 
           <div className={styles.doctorsGrid}>
@@ -195,7 +195,7 @@ export default function OrthopedicsPage() {
           <div className={styles.appointmentSection}>
             <div className={styles.appointmentContent}>
               <h2>Book Your Appointment</h2>
-              <p>Schedule a consultation with our orthopedic specialists for comprehensive bone and joint care</p>
+              <p>Schedule a consultation with our cancer specialists for comprehensive care</p>
               <div className={styles.appointmentFeatures}>
                 <div className={styles.feature}>
                   <Calendar size={24} />
@@ -207,7 +207,7 @@ export default function OrthopedicsPage() {
                 </div>
                 <div className={styles.feature}>
                   <Users size={24} />
-                  <span>Expert Orthopedists</span>
+                  <span>Expert Oncologists</span>
                 </div>
               </div>
               <Link href="/appointment" className="btn-primary">
