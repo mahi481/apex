@@ -17,7 +17,7 @@
 }
 
 .breadcrumb {
-  color: var(--text-light);
+  color: black;
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
@@ -39,7 +39,7 @@
 
 .heroText p {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: black;
   line-height: 1.6;
   margin-bottom: 2rem;
 }
@@ -62,7 +62,7 @@
 
 .statLabel {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: black;
 }
 
 .heroImage {
@@ -81,7 +81,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: white;
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   padding: 1rem 0;
   box-shadow: var(--shadow);
 }
@@ -95,12 +95,13 @@
 }
 
 .tab {
-  color: var(--text-light);
+  color: whitesmoke;
   text-decoration: none;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   transition: all 0.3s ease;
+  
 }
 
 .tab:hover {
@@ -127,7 +128,7 @@
 
 .sectionHeader p {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: black;
 }
 
 .overviewContent {
@@ -149,7 +150,7 @@
 }
 
 .overviewText p {
-  color: var(--text-light);
+  color: black;
   line-height: 1.7;
   margin-bottom: 1.5rem;
 }
@@ -162,7 +163,7 @@
 
 .servicesList li {
   padding: 0.75rem 0;
-  color: var(--text-dark);
+  color: black;
   position: relative;
   padding-left: 1.5rem;
   border-bottom: 1px solid #f0f0f0;
@@ -188,7 +189,7 @@
 }
 
 .facilityCard {
-  background: var(--bg-light);
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
@@ -201,19 +202,19 @@
 }
 
 .facilityCard svg {
-  color: var(--primary-blue);
+  color: var(--bg-light);
   margin-bottom: 1rem;
 }
 
 .facilityCard h4 {
-  color: var(--text-dark);
+  color: var(--bg-light);
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
 }
 
 .facilityCard p {
-  color: var(--text-light);
+  color: white;
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -274,13 +275,13 @@
 }
 
 .qualifications {
-  color: var(--text-light);
+  color: black;
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
 }
 
 .experience {
-  color: var(--text-light);
+  color: black;
   font-size: 0.9rem;
   margin-bottom: 1.5rem;
 }
@@ -322,7 +323,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-light);
+  color: black;
 }
 
 .doctor {
