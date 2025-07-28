@@ -4,8 +4,9 @@ import styles from "./page.module.css"
 
 const AboutPage = () => {
   const teamMembers = [
-   name: "Dr. RIZWAN UL HAQUE",
-      qualifications: " MBBS, MD, DNB, MNAMS, DM(Cardiology), FACC(USA), FSCAI(USA), FESC(Paris), FRCP(Glasgow), FCCP(USA), FRSTM(London)",
+    {
+      name: "Dr. RIZWAN UL HAQUE",
+      qualifications: "MBBS, MD, DNB, MNAMS, DM(Cardiology), FACC(USA), FSCAI(USA), FESC(Paris), FRCP(Glasgow), FCCP(USA), FRSTM(London)",
       position: "Chairman",
       specialization: "Cardiology",
       experience: "25+ years",
