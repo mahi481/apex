@@ -6,7 +6,6 @@ import Header from "@/components/Header/Header"
 import Footer from "@/components/Footer/Footer"
 import StickyElements from "@/components/StickyElements/StickyElements"
 
-
 const inter = Inter({ subsets: ["latin"] })
 const poppins = Poppins({
   subsets: ["latin"],
@@ -14,11 +13,13 @@ const poppins = Poppins({
   variable: "--font-poppins",
 })
 
- Metadata = {
-title: "Apex Hospital - Leading Healthcare in Solapur",
-description:
-"Apex Hospital provides world-class healthcare services in Solapur with expert doctors, advanced facilities, and comprehensive medical care."},
-}export default function RootLayout({
+export const metadata: Metadata = {
+  title: "Apex Hospital - Leading Healthcare in Solapur",
+  description:
+    "Apex Hospital provides world-class healthcare services in Solapur with expert doctors, advanced facilities, and comprehensive medical care.",
+}
+
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
@@ -30,7 +31,6 @@ description:
         <main>{children}</main>
         <Footer />
         <StickyElements />
-       
       </body>
     </html>
   )
