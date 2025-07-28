@@ -23,7 +23,7 @@
 
 .heroText p {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: black;
   line-height: 1.7;
 }
 
@@ -91,7 +91,7 @@
 .visionCard p,
 .missionCard p,
 .valuesCard p {
-  color: var(--text-light);
+  color: black;
   line-height: 1.6;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .textContent p {
-  color: var(--text-dark);
+  color: black;
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
@@ -143,7 +143,7 @@
 
 .highlights li {
   padding: 0.5rem 0;
-  color: var(--text-dark);
+  color: black;
   position: relative;
   padding-left: 1.5rem;
 }
@@ -154,47 +154,6 @@
   left: 0;
   color: var(--primary-green);
   font-weight: bold;
-}
-
-.videoSection {
-  position: sticky;
-  top: 2rem;
-}
-
-.videoContainer {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.videoContainer:hover {
-  transform: scale(1.02);
-}
-
-.videoThumbnail {
-  width: 100%;
-  height: auto;
-}
-
-.playButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition: all 0.3s ease;
-}
-
-.videoContainer:hover .playButton {
-  transform: translate(-50%, -50%) scale(1.1);
-}
-
-.videoSection p {
-  text-align: center;
-  margin-top: 1rem;
-  color: var(--text-light);
-  font-weight: 500;
 }
 
 .achievementsSection {
@@ -249,7 +208,7 @@
 }
 
 .achievementCard p {
-  color: var(--text-light);
+  color: black;
   font-size: 0.95rem;
 }
 
@@ -271,13 +230,13 @@
 }
 
 .sectionHeader p {
-  color: var(--text-light);
+  color: black;
   font-size: 1.2rem;
 }
 
 .teamGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -360,7 +319,7 @@
 }
 
 .locationInfo > p {
-  color: var(--text-light);
+  color: black;
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -374,7 +333,7 @@
 }
 
 .addressDetails p {
-  color: var(--text-dark);
+  color: black;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
