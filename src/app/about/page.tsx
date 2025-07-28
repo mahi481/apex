@@ -4,28 +4,30 @@ import styles from "./page.module.css"
 
 const AboutPage = () => {
   const teamMembers = [
-    {
-      name: "Dr. RIZWAN UL HAQUE",
+   name: "Dr. RIZWAN UL HAQUE",
+      qualifications: " MBBS, MD, DNB, MNAMS, DM(Cardiology), FACC(USA), FSCAI(USA), FESC(Paris), FRCP(Glasgow), FCCP(USA), FRSTM(London)",
       position: "Chairman",
       specialization: "Cardiology",
       experience: "25+ years",
       image: "/images/sir.JPG",
     },
     {
-      name: "Dr. MEHAJABEEN HAQUE",
+      name: "Dr. MEHA JABEEN HAQ ",
+      qualifications: " M.B.B.S, M.S(OBG), FMAS, DMAS",
       position: "CEO",
-      specialization: "General Surgery",
+      specialization: "High Risk Pregnancy Gynecological Endoscopic Surgeries",
       experience: "20+ years",
       image: "/images/maam.jpg",
     },
-    {
+    { 
       name: "Dr. FAROOQ MANIYAR",
+      qualifications: " B.com, MBA, PhD",
       position: "Managing Director",
-      specialization: "Emergency Medicine",
+      specialization: "Hospital Administration",
       experience: "18+ years",
       image: "/placeholder.svg?height=300&width=300",
     },
-   
+    
   ]
 
   const achievements = [
@@ -179,6 +181,7 @@ const AboutPage = () => {
                 </div>
                 <div className={styles.memberInfo}>
                   <h3>{member.name}</h3>
+                   <h4>{member.qualifications}</h4>
                   <p className={styles.position}>{member.position}</p>
                   <p className={styles.specialization}>{member.specialization}</p>
                   <p className={styles.experience}>{member.experience} Experience</p>
