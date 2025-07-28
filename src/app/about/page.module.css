@@ -389,6 +389,7 @@
 
   .textContent h2 {
     font-size: 2rem;
+    text-align: center;
   }
 
   .achievementsGrid {
@@ -414,6 +415,10 @@
 @media (max-width: 480px) {
   .heroText h1 {
     font-size: 2rem;
+    text-align: center;
+  }
+  .heroText p{
+    text-align: center;
   }
 
   .achievementsGrid {
