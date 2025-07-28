@@ -17,7 +17,7 @@ const poppins = Poppins({
  Metadata = {
 title: "Apex Hospital - Leading Healthcare in Solapur",
 description:
-"Apex Hospital provides world-class healthcare services in Solapur with expert doctors, advanced facilities, and comprehensive medical care.",
+"Apex Hospital provides world-class healthcare services in Solapur with expert doctors, advanced facilities, and comprehensive medical care."},
 }export default function RootLayout({
   children,
 }: {
