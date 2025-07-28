@@ -14,47 +14,11 @@ const poppins = Poppins({
   variable: "--font-poppins",
 })
 
-export const metadata: Metadata = {
-  title: "Apex Hospital - Leading Healthcare in Solapur | Best Multispecialty Hospital",
-  description: "Apex Hospital Solapur offers world-class healthcare with 24/7 emergency care, expert doctors, advanced medical technology, and comprehensive treatment across 30+ specialties. Book appointment online.",
-  keywords: "Apex Hospital Solapur, best hospital Solapur, multispecialty hospital, emergency care, cardiology, oncology, orthopedics, neurology, healthcare Solapur, medical center, best doctors Solapur, hospital near me",
-  authors: [{ name: "Apex Hospital" }],
-  creator: "Apex Hospital",
-  publisher: "Apex Hospital",
-  robots: "index, follow",
-  openGraph: {
-    type: "website",
-    locale: "en_IN",
-    url: "https://apexhospitalsolapur.com",
-    siteName: "Apex Hospital Solapur",
-    title: "Apex Hospital - Leading Healthcare in Solapur | Best Multispecialty Hospital",
-    description: "Apex Hospital Solapur offers world-class healthcare with 24/7 emergency care, expert doctors, advanced medical technology, and comprehensive treatment across 30+ specialties.",
-    images: [
-      {
-        url: "/images/apex-hospital-og.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Apex Hospital Solapur - Leading Healthcare Provider",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    site: "@ApexHospitalSolapur",
-    creator: "@ApexHospitalSolapur",
-    title: "Apex Hospital - Leading Healthcare in Solapur",
-    description: "World-class healthcare with 24/7 emergency care, expert doctors, and advanced medical technology in Solapur.",
-    images: ["/images/apex-hospital-twitter.jpg"],
-  },
-  alternates: {
-    canonical: "https://apexhospitalsolapur.com",
-  },
-  verification: {
-    google: "your-google-verification-code",
-  },
-  category: "Healthcare",
-};
-export default function RootLayout({
+ Metadata = {
+title: "Apex Hospital - Leading Healthcare in Solapur",
+description:
+"Apex Hospital provides world-class healthcare services in Solapur with expert doctors, advanced facilities, and comprehensive medical care.",
+}export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
