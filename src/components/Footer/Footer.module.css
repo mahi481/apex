@@ -116,7 +116,7 @@
 }
 
 .copyright {
-  color: #d1d5db;
+  color: white;
   margin: 0;
   font-size: 0.875rem;
 }
@@ -129,7 +129,7 @@
 }
 
 .bottomLinks a {
-  color: #d1d5db;
+  color: white;
   text-decoration: none;
   transition: color 0.3s ease;
   font-size: 0.875rem;
