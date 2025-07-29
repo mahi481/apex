@@ -11,13 +11,13 @@
 
 .header h2 {
   font-size: 2.25rem;
-  color: var(--primary-blue);
+  color: var(--primary-green);
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .header p {
-  color: var(--text-light);
+  color: black;
   font-size: 1.125rem;
 }
 
@@ -57,11 +57,11 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
-  color: var(--text-dark);
+  color: var(--primary-green);
 }
 
 .card p {
-  color: var(--text-light);
+  color: black;
   line-height: 1.6;
   font-size: 0.95rem;
 }
