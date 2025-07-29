@@ -82,11 +82,11 @@ export default function Footer() {
             <h3 className={styles.heading}>Contact Info</h3>
             <div className={styles.contactItem}>
               <MapPin className={styles.contactIcon} />
-              <span>123 Medical Center Rd, Solapur 413001</span>
+               <span>Plot No 1 and 6, Vijapur Rd, opp. to Galaxy Panache, Yamini Nagar, Swami Vivekanand Nagar 2, Solapur, Maharashtra 413007</span>
             </div>
             <div className={styles.contactItem}>
               <Phone className={styles.contactIcon} />
-              <span>+91-217-2345678</span>
+              <span>0217 260 0603</span>
             </div>
             <div className={styles.contactItem}>
               <Mail className={styles.contactIcon} />
