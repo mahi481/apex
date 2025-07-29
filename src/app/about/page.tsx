@@ -216,7 +216,7 @@ const AboutPage = () => {
 
                 <h3>Contact Information</h3>
                 <p>
-                  Phone: 02172600603
+                  Phone: 0217 260 0603
                   <br />
                   Emergency: +91-9876543211
                   <br />
