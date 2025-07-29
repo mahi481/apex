@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Youtube } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook, Twitter, Instagram, Youtube, Linkedin } from "lucide-react"
 import styles from "./Footer.module.css"
 
 export default function Footer() {
@@ -15,14 +15,17 @@ export default function Footer() {
               excellence.
             </p>
             <div className={styles.socials}>
-              <a href="#" className={styles.socialLink}>
+              <a href="https://www.facebook.com/profile.php?id=61578704582486" className={styles.socialLink}>
                 <Facebook />
               </a>
               <a href="#" className={styles.socialLink}>
                 <Twitter />
               </a>
-              <a href="#" className={styles.socialLink}>
+              <a href="https://www.instagram.com/apex_hospital_solapur/" className={styles.socialLink}>
                 <Instagram />
+              </a>
+               <a href="https://www.linkedin.com/in/apex-hospital-7a1959376/" className={styles.socialLink}>
+                <Linkedin />
               </a>
               <a href="#" className={styles.socialLink}>
                 <Youtube />
