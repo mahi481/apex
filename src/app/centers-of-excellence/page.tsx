@@ -36,20 +36,13 @@ const centers = [
     href: "/specialities/oncology",
     stats: { procedures: "2000+", success: "94%" },
   },
-  {
-    name: "Pediatrics",
-    description: "Specialized healthcare for children from newborns to adolescents.",
-    icon: <Baby size={32} />,
-    image: "/placeholder.svg?height=300&width=400&text=Pediatrics",
-    href: "/specialities/pediatrics",
-    stats: { procedures: "6000+", success: "99%" },
-  },
+ 
   {
     name: "Gynecology",
     description: "Women's health services including maternity care and gynecological procedures.",
     icon: <Users size={32} />,
     image: "/placeholder.svg?height=300&width=400&text=Gynecology",
-    href: "/specialities/gynecology",
+    href: "/specialities/obstetrics-gynecology",
     stats: { procedures: "3500+", success: "98%" },
   },
   {
@@ -59,14 +52,6 @@ const centers = [
     image: "/placeholder.svg?height=300&width=400&text=Ophthalmology",
     href: "/specialities/ophthalmology",
     stats: { procedures: "2500+", success: "99%" },
-  },
-  {
-    name: "ENT",
-    description: "Ear, nose, and throat treatments with advanced endoscopic procedures.",
-    icon: <Ear size={32} />,
-    image: "/placeholder.svg?height=300&width=400&text=ENT",
-    href: "/specialities/ent",
-    stats: { procedures: "1800+", success: "97%" },
   },
   {
     name: "General Surgery",
