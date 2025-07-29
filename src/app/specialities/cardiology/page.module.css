@@ -32,7 +32,7 @@
   align-items: center;
   gap: 1rem;
   font-size: 2.5rem;
-  color: var(--primary-blue);
+  color: var(--primary-green);
   margin-bottom: 1.5rem;
   font-weight: 700;
 }
@@ -57,7 +57,7 @@
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  color: var(--primary-blue);
+  color: var(--primary-green);
 }
 
 .statLabel {
@@ -121,7 +121,7 @@
 
 .sectionHeader h2 {
   font-size: 2.5rem;
-  color: var(--primary-blue);
+  color: var(--primary-green);
   margin-bottom: 1rem;
   font-weight: 700;
 }
@@ -139,14 +139,15 @@
 }
 
 .overviewText h3 {
-  color: var(--primary-blue);
+  color: var(--primary-green);
   font-size: 1.5rem;
   margin: 2rem 0 1rem 0;
   font-weight: 600;
 }
 
 .overviewText h3:first-child {
-  margin-top: 0;
+  margin-top: 0; 
+  color: var(--primary-green);
 }
 
 .overviewText p {
