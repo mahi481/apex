@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Stethoscope, Calendar, Phone } from "lucide-react"
+import { Stethoscope, Calendar, Phone, User } from "lucide-react"
 import { useState } from "react"
 import styles from "./QuickActions.module.css"
 
@@ -9,12 +9,6 @@ export default function QuickActions() {
   const [showTooltip, setShowTooltip] = useState(false)
 
   const actions = [
-    {
-      title: "Find Doctor",
-      href: "/doctors",
-      icon: <Stethoscope size={28} />,
-      className: styles.findDoctor,
-    },
     {
       title: "Book Appointment",
       href: "/appointment",
@@ -27,6 +21,18 @@ export default function QuickActions() {
       icon: <Phone size={28} />,
       className: styles.emergency,
       isEmergency: true,
+    },
+     {
+      title: "Health Checkup",
+      href: "/health-packages",
+      icon: <User size={28} />,
+      className: styles.findDoctor,
+    },
+     {
+      title: "Find Doctor",
+      href: "/doctors",
+      icon: <Stethoscope size={28} />,
+      className: styles.findDoctor,
     },
   ]
 
