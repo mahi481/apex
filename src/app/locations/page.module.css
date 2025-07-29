@@ -11,14 +11,14 @@
 
 .pageHeader h1 {
   font-size: 3rem;
-  color: var(--primary-blue);
+  color: var(--primary-green);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .pageHeader p {
   font-size: 1.2rem;
-  color: var(--text-light);
+  color: black;
 }
 
 .locationContent {
@@ -68,7 +68,7 @@
 }
 
 .infoCard h2 {
-  color: var(--primary-blue);
+  color: var(--primary-green);
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
@@ -93,13 +93,13 @@
 
 .infoItem strong {
   display: block;
-  color: var(--text-dark);
+  color: black;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .infoItem p {
-  color: var(--text-light);
+  color: black;
   line-height: 1.6;
   margin: 0;
 }
@@ -112,7 +112,7 @@
 }
 
 .facilitiesCard h3 {
-  color: var(--primary-blue);
+  color: var(--primary-green);
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
@@ -126,7 +126,7 @@
 
 .facilitiesCard li {
   padding: 0.75rem 0;
-  color: var(--text-dark);
+  color: black;
   position: relative;
   padding-left: 1.5rem;
   border-bottom: 1px solid #f0f0f0;
