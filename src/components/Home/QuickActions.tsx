@@ -49,7 +49,7 @@ export default function QuickActions() {
                 onMouseLeave={() => action.isEmergency && setShowTooltip(false)}
               >
                 <div className={styles.icon}>{action.icon}</div>
-                <h3>{action.title}</h3>
+                <h3 className-{styles.titles}>{action.title}</h3>
               </Link>
 
               {action.isEmergency && showTooltip && (
