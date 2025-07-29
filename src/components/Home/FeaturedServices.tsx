@@ -72,7 +72,7 @@ export default function FeaturedServices() {
         </div>
 
         <div className={styles.ctaWrap}>
-          <Link href="/centers-of-excellence" className="btn-primary">
+          <Link href="/specialities" className="btn-primary">
             View All Services
           </Link>
         </div>
