@@ -6,7 +6,7 @@ const AboutPage = () => {
   const teamMembers = [
     {
       name: "Dr. RIZWAN UL HAQUE",
-      qualifications: "MBBS, MD, DNB, MNAMS, DM(Cardiology), FACC(USA), FSCAI(USA), FESC(Paris), FRCP(Glasgow), FCCP(USA), FRSTM(London)",
+      qualifications: " MBBS, MD, DNB, MNAMS, DM(Cardiology), FACC(USA), FSCAI(USA), FESC(Paris), FRCP(Glasgow), FCCP(USA), FRSTM(London)",
       position: "Chairman",
       specialization: "Cardiology",
       experience: "25+ years",
@@ -139,7 +139,8 @@ const AboutPage = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.heroImage}>
+           
+      <div className={styles.heroImage}>
               <Image
                 src="/images/1.png"
                 alt="Apex Hospital Building"
@@ -147,7 +148,11 @@ const AboutPage = () => {
                 height={400}
                 className={styles.hospitalImage}
               />
-            </div>       </div>
+            </div>
+  
+
+
+          </div>
         </div>
       </section>
 
@@ -182,7 +187,7 @@ const AboutPage = () => {
                 </div>
                 <div className={styles.memberInfo}>
                   <h3>{member.name}</h3>
-                   <h4>{member.qualifications}</h4>
+                  <h4>{member.qualifications}</h4>
                   <p className={styles.position}>{member.position}</p>
                   <p className={styles.specialization}>{member.specialization}</p>
                   <p className={styles.experience}>{member.experience} Experience</p>
@@ -206,18 +211,12 @@ const AboutPage = () => {
               <div className={styles.addressDetails}>
                 <h3>Address</h3>
                 <p>
-                  Apex Hospital
-                  <br />
-                  Medical Complex, Station Road
-                  <br />
-                  Solapur, Maharashtra 413001
-                  <br />
-                  India
+                 Plot No 1 and 6, Vijapur Rd, opp. to Galaxy Panache, Yamini Nagar, Swami Vivekanand Nagar 2, Solapur, Maharashtra 413007
                 </p>
 
                 <h3>Contact Information</h3>
                 <p>
-                  Phone: +91-9876543210
+                  Phone: 02172600603
                   <br />
                   Emergency: +91-9876543211
                   <br />
@@ -235,16 +234,17 @@ const AboutPage = () => {
               </div>
             </div>
             <div className={styles.mapContainer}>
-              <div className={styles.mapPlaceholder}>
-                <Image
-                  src="/placeholder.svg?height=400&width=600"
-                  alt="Hospital Location Map"
-                  width={600}
-                  height={400}
-                />
-                <div className={styles.mapOverlay}>
-                  <p>Interactive Map Coming Soon</p>
-                </div>
+              <div className={styles.responsiveMap}>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3802.395279856629!2d75.8945497751705!3d17.63142798329793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5da11b8128a47%3A0x2af0cc226d7c6ea6!2sApex%20Hospital!5e0!3m2!1sen!2sin!4v1753784306207!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+               
               </div>
             </div>
           </div>
