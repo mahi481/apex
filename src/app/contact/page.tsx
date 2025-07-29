@@ -72,13 +72,7 @@ export default function ContactPage() {
                 <div className={styles.contactDetails}>
                   <h3>Address</h3>
                   <p>
-                    Apex Hospital
-                    <br />
-                    Medical Complex, Station Road
-                    <br />
-                    Solapur, Maharashtra 413001
-                    <br />
-                    India
+                   Plot No 1 and 6, Vijapur Rd, opp. to Galaxy Panache, Yamini Nagar, Swami Vivekanand Nagar 2, Solapur, Maharashtra 413007
                   </p>
                 </div>
               </div>
@@ -90,7 +84,7 @@ export default function ContactPage() {
                 <div className={styles.contactDetails}>
                   <h3>Phone Numbers</h3>
                   <p>
-                    Main: +91-9876543210
+                    Main: 0217 260 0603
                     <br />
                     Emergency: +91-9876543211
                     <br />
