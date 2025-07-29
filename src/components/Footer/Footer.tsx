@@ -18,9 +18,6 @@ export default function Footer() {
               <a href="https://www.facebook.com/profile.php?id=61578704582486" className={styles.socialLink}>
                 <Facebook />
               </a>
-              <a href="#" className={styles.socialLink}>
-                <Twitter />
-              </a>
               <a href="https://www.instagram.com/apex_hospital_solapur/" className={styles.socialLink}>
                 <Instagram />
               </a>
