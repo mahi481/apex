@@ -172,7 +172,7 @@ const Header = () => {
           {/* Logo Area */}
           <Link href="/" className={styles.logoArea} onClick={() => setIsMenuOpen(false)}>
             <Image
-              src="/images/apex Logos.svg"
+              src="/images/Apex Logos.svg"
               alt="apex Hospital Logo"
               height={80}
               width={200}
