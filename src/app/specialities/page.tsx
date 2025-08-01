@@ -27,7 +27,7 @@ const specialities = [
   { name: "Ophthalmology", icon: <Eye size={24} />, href: "/specialities/ophthalmology" },
   { name: "General Surgery", icon: <Scissors size={24} />, href: "/specialities/general-surgery" },
   // ok
-  { name: "Breast Clinic", icon: <Baby size={24} />, href: "/specialities/breast-clicnic" },
+  { name: "Breast Clinic", icon: <Baby size={24} />, href: "/specialities/breast-clinic" },
   { name: "Critical Care", icon: <Shield size={24} />, href: "/specialities/critical-care" },
   { name: "Dermatology", icon: <Eye size={24} />, href: "/specialities/dermatology" },
   { name: "Diabetology", icon: <Syringe size={24} />, href: "/specialities/diabetology" },
