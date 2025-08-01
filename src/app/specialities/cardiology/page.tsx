@@ -75,7 +75,7 @@ export default function CardiologyPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="images/heart (2).jpg"
+                src="images/cardio.jpg"
                 alt="Cardiology Department"
                 width={600}
                 height={400}
