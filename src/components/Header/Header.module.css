@@ -7,6 +7,7 @@
   top: 0;
   z-index: 1000;
   border-bottom: 1px solid #e5e7eb;
+ 
 }
 
 .container {
@@ -14,6 +15,7 @@
   margin: 0 auto;
   padding: 0 16px;
 }
+
 /* Main Grid Container */
 .mainGridContainer {
   display: grid;
@@ -33,9 +35,9 @@
   padding-top: 8px;
 }
 
-.logoArea:hover {
+/* .logoArea:hover {
   transform: scale(1.02);
-}
+} */
 
 .logo {
  
@@ -238,7 +240,7 @@
 }
 
 .navList > li > a {
-  color: #374151;
+  color: crimson;
   text-decoration: none;
   font-weight: 500;
   font-size: 15px;
@@ -248,7 +250,22 @@
 }
 
 .navList > li > a:hover {
-  color: #dc2626;
+  color: red ;
+}
+
+.navList >li>a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+ 
+  height: 3px;
+  background-color: crimson;
+ transition: width 0.35s ease;
+  transform-origin: left;
+}
+.navList > li > a:hover::after,.navList >li >a:focus-visible::after{
+  width: 100%;
 }
 
 /* Dropdown Styles */
@@ -658,7 +675,7 @@
   }
   
   .logo {
-    max-height: 40px;
+    max-height: 33px;
     max-width: 120px;
   }
   
