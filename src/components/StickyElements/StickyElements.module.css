@@ -17,7 +17,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem;
-  background: linear-gradient(135deg, var(--primary-blue), var(--primary-green));
+  background: crimson;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -30,7 +30,7 @@
 }
 
 .stickyBtn:hover {
-  background: linear-gradient(135deg, #0052a3, #008a43);
+  background: var(--primary-green);
   transform: translateY(-2px);
 }
 
