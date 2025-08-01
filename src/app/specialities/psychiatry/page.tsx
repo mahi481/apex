@@ -68,7 +68,7 @@ export default function PsychiatryPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/psychiatry.jpg"
                 alt="Psychiatry Department"
                 width={600}
                 height={400}
