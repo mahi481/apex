@@ -68,7 +68,7 @@ export default function OphthalmologyPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/images/eyecare.jpg.jpg"
+                src="/images/eyecare.jpg"
                 alt="Ophthalmology Department"
                 width={600}
                 height={400}
