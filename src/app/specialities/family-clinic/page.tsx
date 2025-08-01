@@ -68,7 +68,7 @@ export default function FamilyClinicPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/familyclinic.jpg"
                 alt="Family Clinic Department"
                 width={600}
                 height={400}
