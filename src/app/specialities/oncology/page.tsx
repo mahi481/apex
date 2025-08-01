@@ -68,7 +68,7 @@ export default function OncologyPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/onco.jpg"
                 alt="Oncology Department"
                 width={600}
                 height={400}
