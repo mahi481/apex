@@ -68,7 +68,7 @@ export default function TransfusionMedicinePage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/images/transfusion.jpg"
+                src="/images/transfusion.png"
                 alt="Transfusion Medicine Department"
                 width={600}
                 height={400}
