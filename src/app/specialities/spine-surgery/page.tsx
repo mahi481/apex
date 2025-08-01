@@ -68,7 +68,7 @@ export default function SpineSurgeryPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/spine.jpg"
                 alt="Spine Surgery Department"
                 width={600}
                 height={400}
