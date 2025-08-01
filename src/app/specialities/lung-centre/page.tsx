@@ -68,7 +68,7 @@ export default function LungCentrePage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/images/kidney.jpg"
+                src="/images/lungcentre.jpg"
                 alt="Lung Centre Department"
                 width={600}
                 height={400}
