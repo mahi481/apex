@@ -68,7 +68,7 @@ export default function GeneralMedicinePage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/generalmedicine.jpg"
                 alt="General Medicine Department"
                 width={600}
                 height={400}
