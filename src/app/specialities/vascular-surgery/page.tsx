@@ -68,7 +68,7 @@ export default function VascularSurgeryPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/vascular.jpg"
                 alt="Vascular Surgery Department"
                 width={600}
                 height={400}
