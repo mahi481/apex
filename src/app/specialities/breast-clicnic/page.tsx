@@ -68,7 +68,7 @@ export default function BreastClinicPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/breastclinic.jpg"
                 alt="Breast Clinic Department"
                 width={600}
                 height={400}
