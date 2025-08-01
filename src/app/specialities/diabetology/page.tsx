@@ -68,7 +68,7 @@ export default function DiabetologyPage() {
             </div>
             <div className={styles.heroImage}>
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/diabetes.jpg"
                 alt="Diabetology Department"
                 width={600}
                 height={400}
