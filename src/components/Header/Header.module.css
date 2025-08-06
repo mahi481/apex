@@ -32,17 +32,17 @@
   align-items: center;
   text-decoration: none;
   transition: transform 0.2s ease;
-  padding-top: 8px;
+  padding-top: 0px;
 }
 
-/* .logoArea:hover {
-  transform: scale(1.02);
-} */
 
 .logo {
- 
-  transform: scale(2.5);
+ width: 100%;
+  transform: scale(2.8);
   object-fit: contain;
+ 
+;
+  
 }
 
 /* Desktop Right Content Area */
@@ -545,6 +545,14 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .logo{
+    width: 59%;
+    
+    margin-left: 53px;}
+  
+}
+
 @media (max-width: 1024px) {
   .topRowActions {
     flex-wrap: wrap;
@@ -578,7 +586,10 @@
   .cardMenuContent {
     grid-template-columns: 1fr;
   }
+ 
 }
+
+
 
 @media (max-width: 968px) {
   .desktopRightContentArea {
@@ -601,8 +612,8 @@
   }
   
   .logo {
-    max-height: 50px;
-    max-width: 160px;
+    max-height: 29px;
+    width: auto;
   }
   
   .logoArea {
@@ -622,7 +633,7 @@
   
   .logo {
     max-height: 45px;
-    max-width: 140px;
+    max-width: auto;
   }
   
   .mobileMenuTopBar {
@@ -675,8 +686,8 @@
   }
   
   .logo {
-    max-height: 33px;
-    max-width: 120px;
+    max-height: 29px;
+    width: auto;
   }
   
   .navListMobile > li > a {
