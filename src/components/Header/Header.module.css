@@ -686,8 +686,9 @@
   }
   
   .logo {
-    max-height: 29px;
-    width: auto;
+   max-height: 43px;
+        width: auto;
+        margin: 30px 58px;
   }
   
   .navListMobile > li > a {
@@ -837,4 +838,5 @@
     border-width: 2px;
   }
 }
+
 
