@@ -47,8 +47,7 @@ export default function LocationsPage() {
                     Main: 0217 260 0603
                     <br />
                     Emergency: +91-9876543211
-                    <br />
-                    Appointments: +91-9876543212
+                   
                   </p>
                 </div>
               </div>
@@ -115,3 +114,4 @@ export default function LocationsPage() {
     </div>
   )
 }
+
