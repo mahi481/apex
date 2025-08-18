@@ -57,7 +57,7 @@ export default function LocationsPage() {
                 <div>
                   <strong>Email</strong>
                   <p>
-                    info@apexhospital.com
+                    apexhospital777@gmail.com
                     <br />
                     appointments@apexhospital.com
                   </p>
